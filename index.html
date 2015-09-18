@@ -1,17 +1,40 @@
 <!DOCTYPE HTML>
   <head>
-    <!-- Meta meuk -->
+    <!-- Jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Meta tags -->
     <meta name="keywords" content="Mobiel, Telefoon, Opkomst, Vroeger, Nu, Toekomst">
     <meta name="description" content="Alles wat je wilt weten over de opkomst van de telefoon!">
     <meta charset="UTF-8">
-    <meta name="author" content="Daniel Richie Mark">
+    <meta name="author" content="Daniel Vercouteren, Richie Counts, Mark Daleman">
     <!-- Title -->
     <title>Opkomst mobiele telefoon</title>
-    <!-- CSS Inladen -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          verticalCentered: false,
+
+          //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+          css3:true
+        });
+      });
+    </script>
+    <!-- Googel Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-  </body>
+  <div id="fullpage">
+  	<div class="section " id="section0"><h1>fullPage.js</h1></div>
+  	<div class="section" id="section1">
+  	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+  	    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+  	</div>
+  	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+  	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+  </div>
   <footer>
   </footer>
+
 </html>
