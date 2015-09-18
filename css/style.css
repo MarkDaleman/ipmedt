@@ -13,3 +13,37 @@ p, h1, h2, h3{
 	text-align:center;
 	font-size: 12px;
 }
+
+#section0{
+   background-image: url("../images/pexels-photo.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+#section1{
+   background-image: url("../images/pexels-photo.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+#section2{
+   background-image: url("../images/pexels-photo.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+}
+#section3{
+   background-image: url("../images/pexels-photo.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
