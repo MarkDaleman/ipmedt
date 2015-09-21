@@ -7,7 +7,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 
 p, h1, h2, h3{
-  font-family: 'Roboto', sans-serif;
+font-family: 'Cabin Condensed', sans-serif;
 }
 .section{
 	text-align:center;
@@ -57,4 +57,15 @@ p, h1, h2, h3{
     width: 100%;
     padding: 0;
     margin:0;
+    list-style-type: none;
+}
+
+#menu li{
+    display: inline;
+    float: left;
+}
+#menu a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    padding: 4px;
 }
