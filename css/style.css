@@ -11,4 +11,50 @@ p, h1, h2, h3{
 }
 .section{
 	text-align:center;
+	font-size: 12px;
+}
+
+#section0{
+
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+#section1{
+
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+#section2{
+
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+}
+#section3{
+   
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+#menu{ 
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
 }
