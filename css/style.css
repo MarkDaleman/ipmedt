@@ -7,15 +7,31 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 
 p, h1, h2, h3{
-  font-family: 'Roboto', sans-serif;
+font-family: 'Cabin Condensed', sans-serif;
 }
 .section{
 	text-align:center;
 	font-size: 12px;
 }
 
-#section0{
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
 
+#section0{
+    background-image: url("");
    background-repeat: no-repeat;
    background-position: center;
    max-width: 80%;
@@ -23,7 +39,8 @@ p, h1, h2, h3{
    display: block;
 }
 #section1{
-
+    background-color: blue;
+    z-index: 2;
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -31,7 +48,6 @@ p, h1, h2, h3{
    display: block;
 }
 #section2{
-
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -40,7 +56,6 @@ p, h1, h2, h3{
 }
 }
 #section3{
-   
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -57,4 +72,19 @@ p, h1, h2, h3{
     width: 100%;
     padding: 0;
     margin:0;
+    list-style-type: none;
+}
+
+.bigasstitle{
+    font-size: 120px;
+    color: #fff;
+}
+#menu li{
+    display: inline;
+    float: left;
+}
+#menu a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    padding: 4px;
 }
