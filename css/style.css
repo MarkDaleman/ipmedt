@@ -14,6 +14,7 @@ font-family: 'Cabin Condensed', sans-serif;
 	font-size: 12px;
 }
 
+<<<<<<< HEAD
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -32,15 +33,23 @@ video#bgvid {
 
 #section0{
     background-image: url("");
+=======
+#section0{
+   background-color: #677576;
+>>>>>>> branch_van_richie
    background-repeat: no-repeat;
    background-position: center;
-   max-width: 80%;
+   max-width: 100%;
    height: auto;
    display: block;
 }
 #section1{
+<<<<<<< HEAD
     background-color: blue;
     z-index: 2;
+=======
+   background-color: #0F82AE;   
+>>>>>>> branch_van_richie
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -48,6 +57,10 @@ video#bgvid {
    display: block;
 }
 #section2{
+<<<<<<< HEAD
+=======
+   background-color: #99ABB0;
+>>>>>>> branch_van_richie
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -56,6 +69,10 @@ video#bgvid {
 }
 }
 #section3{
+<<<<<<< HEAD
+=======
+   background-color: #E7F3F2;
+>>>>>>> branch_van_richie
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -63,7 +80,7 @@ video#bgvid {
    display: block;
 }
 
-#menu{ 
+#menu{
     position:fixed;
     top:0;
     left:0;
@@ -72,6 +89,7 @@ video#bgvid {
     width: 100%;
     padding: 0;
     margin:0;
+<<<<<<< HEAD
     list-style-type: none;
 }
 
@@ -87,4 +105,15 @@ video#bgvid {
     text-align: center;
     text-decoration: none;
     padding: 4px;
+=======
+	background-color: #EE5322;
+>>>>>>> branch_van_richie
+}
+li{
+	margin:0px auto;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 30px;
+	color: #EE5322;
+	display:inline-block;
 }
