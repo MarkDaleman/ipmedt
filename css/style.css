@@ -34,7 +34,7 @@ video#bgvid {
     background-image: url("");
    background-repeat: no-repeat;
    background-position: center;
-   max-width: 100%;
+   max-width: 80%;
    height: auto;
    display: block;
 }
