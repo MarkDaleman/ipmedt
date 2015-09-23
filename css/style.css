@@ -15,15 +15,15 @@ p, h1, h2, h3{
 }
 
 #section0{
-
+   background-color: #677576;
    background-repeat: no-repeat;
    background-position: center;
-   max-width: 80%;
+   max-width: 100%;
    height: auto;
    display: block;
 }
 #section1{
-
+   background-color: #0F82AE;   
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -31,7 +31,7 @@ p, h1, h2, h3{
    display: block;
 }
 #section2{
-
+   background-color: #99ABB0;
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -40,7 +40,7 @@ p, h1, h2, h3{
 }
 }
 #section3{
-   
+   background-color: #E7F3F2;
    background-repeat: no-repeat;
    background-position: center;
    max-width: 100%;
@@ -48,7 +48,7 @@ p, h1, h2, h3{
    display: block;
 }
 
-#menu{ 
+#menu{
     position:fixed;
     top:0;
     left:0;
@@ -57,4 +57,13 @@ p, h1, h2, h3{
     width: 100%;
     padding: 0;
     margin:0;
+	background-color: #EE5322;
+}
+li{
+	margin:0px auto;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 30px;
+	color: #EE5322;
+	display:inline-block;
 }
