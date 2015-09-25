@@ -6,14 +6,51 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 }
 
+/* Images Responsive
+ * --------------------------------------- */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fonts & Pagina
+ * --------------------------------------- */
 p, h1, h2, h3{
 font-family: 'Cabin Condensed', sans-serif;
 }
-.section{
-	text-align:center;
-	font-size: 12px;
+
+h1{
+    text-align:center;
+    font-size: 60px;
 }
 
+p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Kolommen (echt zelf gedaan, hoor)
+ * --------------------------------------- */
+
+#contentBox {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#contentBox .column-3 {
+    float: left;
+    margin: 0;
+    width: 33%;
+}
+
+#contentBox .column-2 {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+/* Bigass Video player motherfucka
+ * --------------------------------------- */
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -29,6 +66,7 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
+
 
 #section0{
 
