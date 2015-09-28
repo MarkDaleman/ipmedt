@@ -47,9 +47,9 @@ p{
 }
 
 .bigasstitle{
-	margin-top: 90px;
     font-size: 120px;
     color: #fff;
+    padding-top: 90px;
 }
 
 /* Kolommen per pagina */
@@ -73,6 +73,9 @@ p{
     margin: 0;
     width: 33%;
 }
+.section{
+	padding-top: 65px;
+}
 
 /* Video player */
 video#bgvid { 
@@ -87,15 +90,8 @@ video#bgvid {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
-/* TimeLine */
-.timeline-event-content{
-	background-color: #E6E6E6;
-	padding: 10px;
-}
-
 
 /* Sections (Pagina's)*/
 
@@ -108,7 +104,6 @@ video#bgvid {
 
 /* Pagina 2 */
 #section1{
-	margin-top: 60px;
 	background-color: blue;
 	z-index: 2;
 	background-color: #0F82AE;   
@@ -121,7 +116,6 @@ video#bgvid {
 
 /* Pagina 3 */
 #section2{
-	margin-top: 60px;
 	background-color: #99ABB0;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -132,7 +126,6 @@ video#bgvid {
 
 /* Pagina 4 */
 #section3{
-	margin-top: 60px;
 	background-color: #E7F3F2;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -142,7 +135,7 @@ video#bgvid {
 }
 
 /* Navigatie */
-#menu{
+.nav{
     position:fixed;
     top:0;
     left:0;
@@ -152,7 +145,7 @@ video#bgvid {
     padding: 0;
     margin:0;
     list-style-type: none;
-	background-color: #EE5322;
+    background-color: #EE5322;
 }
 
 #menu li{
