@@ -47,6 +47,7 @@ p{
 }
 
 .bigasstitle{
+	margin-top: 90px;
     font-size: 120px;
     color: #fff;
 }
@@ -89,6 +90,12 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
+/* TimeLine */
+.timeline-event-content{
+	background-color: #E6E6E6;
+	padding: 10px;
+}
+
 
 /* Sections (Pagina's)*/
 
