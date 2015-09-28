@@ -1,75 +1,79 @@
-/* Reset CSS
- * --------------------------------------- */
+/* CSS Resetten */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
-/* Images Responsive
- * --------------------------------------- */
+/* Foto's responsive maken */
 img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
-/* Fonts & Pagina
- * --------------------------------------- */
+/* Lettertypen */
 p, h1, h2, h3{
-font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Cabin Condensed', sans-serif;
 }
 
+/* Basis opmaak pagina */
 h1{
-    text-align:center;
-    font-size: 60px;
+	text-align:center;
+	font-size: 60px;
 }
 
 p{
-  margin-left: 10px;
-  margin-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
+/* Grote rode knop en titel*/
 .button-red{
-display:table;
-position:relative;
-font-size:14px;
-margin:0 auto;
-outline:none;
-color:#fff;
-border:none;
-text-decoration:none;
-text-align:center;
-background-color: blue;
-font-size:30px;
-padding: 20px;
--webkit-animation-duration: 2s;
--webkit-animation-delay: 1s;
--webkit-animation-iteration-count: infinite;
+	display:table;
+	position:relative;
+	font-size:14px;
+	margin:0 auto;
+	outline:none;
+	color:#fff;
+	border:none;
+	text-decoration:none;
+	text-align:center;
+	background-color: blue;
+	font-size:30px;
+	padding: 20px;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
 }
 
+.bigasstitle{
+    font-size: 120px;
+    color: #fff;
+}
 
-/* Kolommen (echt zelf gedaan, hoor)
- * --------------------------------------- */
+/* Kolommen per pagina */
 
+/* 1 kolom */
 #contentBox {
     margin: 0 auto;
     width: 100%;
 }
 
+/* 2 kolommen */
+#contentBox .column-2 {
+	float: left;
+	margin: 0;
+	width: 50%;
+}
+
+/* 3 kolommen */
 #contentBox .column-3 {
     float: left;
     margin: 0;
     width: 33%;
 }
 
-#contentBox .column-2 {
-    float: left;
-    margin: 0;
-    width: 50%;
-}
-
-/* Bigass Video player motherfucka
- * --------------------------------------- */
+/* Video player */
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -86,44 +90,48 @@ video#bgvid {
     background-size: cover; 
 }
 
+/* Sections (Pagina's)*/
 
+/* Pagina 1 */
 #section0{
-
-   max-width: 100%;
-   height: auto;
-   display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
+
+/* Pagina 2 */
 #section1{
-    background-color: blue;
-    z-index: 2;
-
-   background-color: #0F82AE;   
-
-   background-repeat: no-repeat;
-   background-position: center;
-   max-width: 100%;
-   height: auto;
-   display: block;
+	background-color: blue;
+	z-index: 2;
+	background-color: #0F82AE;   
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
+
+/* Pagina 3 */
 #section2{
-   background-color: #99ABB0;
-   background-repeat: no-repeat;
-   background-position: center;
-   max-width: 100%;
-   height: auto;
-   display: block;
+	background-color: #99ABB0;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
-}
+
+/* Pagina 4 */
 #section3{
-
-   background-color: #E7F3F2;
-   background-repeat: no-repeat;
-   background-position: center;
-   max-width: 100%;
-   height: auto;
-   display: block;
+	background-color: #E7F3F2;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
+/* Navigatie */
 #menu{
     position:fixed;
     top:0;
@@ -136,21 +144,18 @@ video#bgvid {
     list-style-type: none;
 }
 
-.bigasstitle{
-    font-size: 120px;
-    color: #fff;
-}
 #menu li{
     display: inline;
     float: left;
 }
+
 #menu a:link, a:visited {
     text-align: center;
     text-decoration: none;
     padding: 4px;
-	   background-color: #EE5322;
-
+	background-color: #EE5322;
 }
+
 li{
 	margin:0px auto;
 	text-decoration: none;
