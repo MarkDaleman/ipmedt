@@ -29,26 +29,24 @@ p{
   margin-right: 10px;
 }
 
-a.button{
-  text-decoration: none;
-  background-color: red;
-  color: white;
-  display: inline-block;
-  font-size:30px;
-  padding: 20px;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
+.button-red{
+display:table;
+position:relative;
+font-size:14px;
+margin:0 auto;
+outline:none;
+color:#fff;
+border:none;
+text-decoration:none;
+text-align:center;
+background-color: blue;
+font-size:30px;
+padding: 20px;
+-webkit-animation-duration: 2s;
+-webkit-animation-delay: 1s;
+-webkit-animation-iteration-count: infinite;
 }
 
-.wrapper {
-  text-align: center;
-}
-
-a.button {
-    text-align: center;
-    margin-top: 50px;
-}
 
 /* Kolommen (echt zelf gedaan, hoor)
  * --------------------------------------- */
@@ -150,8 +148,7 @@ video#bgvid {
     text-align: center;
     text-decoration: none;
     padding: 4px;
-
-	background-color: #EE5322;
+	   background-color: #EE5322;
 
 }
 li{
