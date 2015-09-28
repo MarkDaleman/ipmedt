@@ -101,6 +101,7 @@ video#bgvid {
 
 /* Pagina 2 */
 #section1{
+	margin-top: 60px;
 	background-color: blue;
 	z-index: 2;
 	background-color: #0F82AE;   
@@ -113,6 +114,7 @@ video#bgvid {
 
 /* Pagina 3 */
 #section2{
+	margin-top: 60px;
 	background-color: #99ABB0;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -123,6 +125,7 @@ video#bgvid {
 
 /* Pagina 4 */
 #section3{
+	margin-top: 60px;
 	background-color: #E7F3F2;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -136,12 +139,13 @@ video#bgvid {
     position:fixed;
     top:0;
     left:0;
-    height: 40px;
+    height: 60px;
     z-index: 70;
     width: 100%;
     padding: 0;
     margin:0;
     list-style-type: none;
+	background-color: #EE5322;
 }
 
 #menu li{
