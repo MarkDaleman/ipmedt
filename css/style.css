@@ -31,7 +31,6 @@ p{
 .button-red{
 	display:table;
 	position:relative;
-	font-size:14px;
 	margin:0 auto;
 	outline:none;
 	color:#fff;
@@ -40,16 +39,22 @@ p{
 	text-align:center;
 	background-color: blue;
 	font-size:30px;
-	padding: 20px;
+	padding: 18px;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-delay: 1s;
 	-webkit-animation-iteration-count: infinite;
 }
 
 .bigasstitle{
-    font-size: 120px;
+    font-size: 100px;
     color: #fff;
     padding-top: 90px;
+}
+
+.ondertitel{
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
 }
 
 /* Kolommen per pagina */
@@ -168,3 +173,10 @@ li{
 	color: #EE5322;
 	display:inline-block;
 }
+
+.toTop{
+	position: fixed;
+	top: 80%;
+	left: 90%;
+	z-index: 70;
+	}
