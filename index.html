@@ -18,7 +18,7 @@
 	  <script type="text/javascript" src="js/timeliner.js"></script>
 	  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	  <script type="text/javascript" src="js/Chart.js"></script>
-	  <script type="text/javascript" src="js/showfrontpage.js"></script>
+		<script type="text/javascript" src="js/showfrontpage.js"></script>
 	  <script type="text/javascript">
 	  $(document).ready(function() {
 	  $('#fullpage').fullpage({
@@ -41,28 +41,26 @@
 	</head>
 	
 	<body>
-
-	
 	<!-- PAGINA CONTENT -->
 
+	<!-- MENU -->
+	<div class="nav">
+		<ul id="menu">
+			<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+			<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+		</ul>
+	</div>
+
 	<div id="openingsfilm">
-		<video autoplay loop muted id="openingsfilm">
+	<video autoplay loop muted id="bgvid">
 		<source src="openingsfilm.webm" type="video/webm">
 		<source src="openingsfilm.mp4" type="video/mp4">
+	</video>
 	</div>
 	
-	
 	<div id="fullpage">
-		<!-- MENU -->
-		<div class="nav">
-			<ul id="menu">
-				<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-				<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-			</ul>
-		</div>
-
 		<!-- TO TOP KNOP -->
 		<div class="toTop">
 			<a href="#firstPage"><img src="./images/backtotop.png" /></a>
@@ -70,8 +68,7 @@
 		<!-- PAGINA 1 -->
 
 		<div class="section" id="section0">
-			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
-			<h2 class="ondertitel">Een website, waar je wat aan hebt.</h2>
+			<h1 class="bigasstitle">Opkomst Smartphone</h1>
 			<br>
 			<a href="#secondPage" class="button-red animated pulse">Scroll down!</a>
 			<video autoplay loop muted id="bgvid">
@@ -82,45 +79,64 @@
 		
 		<!-- PAGINA 2 -->
 		<div class="section" id="section1"><h1>The history of the mobile phone</h1>
-		  <div id="contentBox">
-			<div class="column-3">
-			  <p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-			  </p>
-			</div>
-			<div class="column-3">
-			  <div id="timeline" class="timeline-container">
-				<div class="timeline-wrapper">
-				  <h2 class="timeline-time">1976</h2>
-				  <dl class="timeline-series">
-					<dt class="timeline-event" id="event01"><a>Gebeurtenis 1</a></dt>
-					<dd class="timeline-event-content" id="event01EX">
-					<p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</dd>
-					<dt class="timeline-event" id="event02"><a>Gebeurtenis 2</a></dt>
-					<dd class="timeline-event-content" id="event02EX">
-					<p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</dd>
-				  </dl>
+			<div class="tijdlijn">
+				<!-- BLOCK L -->
+				<div class="blok">
+
+					<span class="tijdlijn-text"> 1995</span>
+
+
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
 				</div>
-				<div class="timeline-wrapper">
-				  <h2 class="timeline-time">1984</h2>
-				  <dl class="timeline-series">
-					<dt class="timeline-event" id="event03"><a>Gebeurtenis 3</a></dt>
-					<dd class="timeline-event-content" id="event03EX">
-					<p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</dd>
-				  </dl>
+				<!-- BLOCK R -->
+				<div class="blok">
+
+					<span class="tijdlijn-text"> 1960</span>
+
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
 				</div>
-			  </div>
-			</div>
-			<div class="column-3">
-			  <p>
-				Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-			  </p>
-			</div>
-		  </div>
-		  </div>
+				<!-- BLOCK L -->
+				<div class="blok">
+
+					<span class="tijdlijn-text"> 1940</span>
+
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+			</div><!-- TIJDLIJN -->
+		 </div>
 		  
 		  <!-- PAGINA 3-->
 		  <div class="section" id="section2"><h1>Hier moet de tijdlijn verder gaan</h1>
