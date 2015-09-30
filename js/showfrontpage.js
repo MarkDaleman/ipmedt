@@ -1,12 +1,9 @@
-/* 
-
 $(document).ready(function(){
-	$("#openingsfilm").show()
+	$("#openingsfilm").show();
 	$("#fullpage").hide();
 	
-	$("#openingfilm").click(function(){
-		$("#fullpage").show()
+	$("#openingsfilm").click(function(){
+		$("#fullpage").show();
+		$("#openingsfilm").hide();
 	});
 });
-
-*/
