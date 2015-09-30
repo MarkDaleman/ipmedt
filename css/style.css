@@ -57,26 +57,6 @@ p{
 	color: #fff;
 }
 
-#openingsfilm{
-	height: 100%;
-	width: 100%;
-}
-
-video#openingsfilm{ 
-    position: fixed;
-    top: 50%;
-    z-index: 1;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover; 
-}
-
 /* Kolommen per pagina */
 
 /* 1 kolom */
@@ -103,7 +83,7 @@ video#openingsfilm{
 }
 
 /* Video player */
-video#bgvid { 
+video#bgvid {
     position: fixed;
     top: 50%;
     z-index: 1;
@@ -115,7 +95,24 @@ video#bgvid {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-size: cover; 
+    background-size: cover;
+}
+video#openingsfilm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+#openingsfilm{
+    height: 100%;
+    width: 100%;
 }
 
 /* Sections (Pagina's)*/
@@ -131,7 +128,7 @@ video#bgvid {
 #section1{
 	background-color: blue;
 	z-index: 2;
-	background-color: #0F82AE;   
+	background-color: #0F82AE;
 	background-repeat: no-repeat;
 	background-position: center;
 	max-width: 100%;
@@ -200,3 +197,96 @@ li{
 	left: 90%;
 	z-index: 70;
 	}
+
+
+/* TIJDLIJN */
+
+.tijdlijn::before {
+	/* this is the vertical line */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 5px;
+	background: #ef5423;
+}
+
+.blok {
+	padding-top: 20px;
+	position: relative;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.tijdlijn-text{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 48%;
+	background-color: white;
+	border-radius: 50%;
+	padding: 11px;
+	margin-top: 50px;
+}
+
+.tijdlijn-content{
+	margin-left: 0;
+	width: 45%;
+	background-color: #e7f2f2;
+	padding: 10px;
+}
+
+span.tijdlijn-text {
+	line-height: 40px;
+	text-align: center;
+}
+
+.right{
+	position: relative;
+	float: right;
+}
+.left{
+	position: relative;
+	float: left;
+}
+
+.datum1{
+	color: red;
+	width: 100%;
+	left: 122%;
+	top: 6px;
+}
+
+.readmore{
+	padding: .8em 1em;
+	background: #acb7c0;
+	color: white;
+	border-radius: 0.25em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	display: table;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ef5423;
+}
+.readmore{
+color: white;
+}
+
+
+.timeline a{
+	display: block;
+	padding-bottom: 20px;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.tijdlijn-img {
+	float: left;
+	padding: 10px;
+	display: block;
+}
+
+
