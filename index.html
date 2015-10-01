@@ -31,7 +31,7 @@
 	  fixedElements: '#header, .footer',
 	  responsiveWidth: 0,
 	  responsiveHeight: 0,
-	  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+	  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
 	  menu: '#myMenu',
 	  });
 	  });
@@ -50,6 +50,8 @@
 			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
 			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
 			<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+			<li data-menuanchor="5thpage"><a href="#5thpage">Feedback</a></li>
+			<li data-menuanchor="6thpage"><a href="#6thpage">Bronnenlijst</a></li>
 		</ul>
 	</div>
 
@@ -161,6 +163,89 @@
 			  <canvas id="myBarChart" width="400" height="400"></canvas>
 			  </div><!-- Content -->
 			</div>
+			
+			<!-- PAGINA 5 -->
+		  <div class="section" id="section4"><h1>Feedback</h1>
+			<div class="content">
+				<form method='post'>
+					<p>Naam: <input type='text' name='name' id='name' /></p>
+					<br />	
+
+					<p>Wat is uw rapportcijfer voor deze website? <br>
+						<fieldset id="rapport">
+							<input type="radio" name="rapport" value="1">1
+							<input type="radio" name="rapport" value="2">2
+							<input type="radio" name="rapport" value="3">3
+							<input type="radio" name="rapport" value="4">4
+							<input type="radio" name="rapport" value="5">5
+							<input type="radio" name="rapport" value="6">6
+							<input type="radio" name="rapport" value="7">7
+							<input type="radio" name="rapport" value="8">8
+							<input type="radio" name="rapport" value="9">9
+							<input type="radio" name="rapport" value="10">10
+						</fieldset>	
+					</p>
+					<br />
+					
+					<fieldset id="vraag1">
+							<legend>Deze website bevat informatie waar ik wat aan heb.</legend>
+								<input type="radio" name="vraag1" value="1"> Zeer mee oneens
+								<input type="radio" name="vraag1" value="2"> Mee oneens
+								<input type="radio" name="vraag1" value="3"> Neutraal
+								<input type="radio" name="vraag1" value="4"> Mee eens
+								<input type="radio" name="vraag1" value="5"> Zeer mee eens
+						</fieldset>	
+										
+					<br />
+					<fieldset id="vraag2">	
+							<legend>Ik vind het taalgebruik op de website duidelijk.</legend>
+								<input type="radio" name="vraag2" value="1"> Zeer mee oneens
+								<input type="radio" name="vraag2" value="2"> Mee oneens
+								<input type="radio" name="vraag2" value="3"> Neutraal
+								<input type="radio" name="vraag2" value="4"> Mee eens
+								<input type="radio" name="vraag2" value="5"> Zeer mee eens
+						</fieldset>	
+					
+					<br />
+					<fieldset id="vraag3">	
+							<legend>Ik vind de website makkelijk in gebruik.</legend>
+								<input type="radio" name="vraag3" value="1"> Zeer mee oneens
+								<input type="radio" name="vraag3" value="2"> Mee oneens
+								<input type="radio" name="vraag3" value="3"> Neutraal
+								<input type="radio" name="vraag3" value="4"> Mee eens
+								<input type="radio" name="vraag3" value="5"> Zeer mee eens
+					</fieldset>	
+					<br />
+					<fieldset id="vraag4">	
+							<legend>De vormgeving van de site spreekt mij aan.</legend>
+								<input type="radio" name="vraag4" value="1"> Zeer mee oneens
+								<input type="radio" name="vraag4" value="2"> Mee oneens
+								<input type="radio" name="vraag4" value="3"> Neutraal
+								<input type="radio" name="vraag4" value="4"> Mee eens
+								<input type="radio" name="vraag4" value="5"> Zeer mee eens
+					</fieldset>
+					<br />
+					<fieldset id="vraag5">	
+							<legend>Zou u deze website delen met anderen? </legend>
+								<input type="radio" name="vraag5" value="1"> Ja
+								<input type="radio" name="vraag5" value="2"> Nee
+					</fieldset>
+					
+					<br />
+					<p>Opmerkingen:<br />
+					<textarea name='comment' id='comment'></textarea></p><br />
+					<input type='submit' value='Submit' />  
+				</form>
+			</div>
+		  </div>
+		  
+		  <!-- PAGINA 6 -->
+		  <div class="section" id="section5"><h1>Bronnenlijst</h1>
+			<div class="content">
+			  <p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>  
+			</div>
+		  </div>	
+
 		  </div><!-- FULLPAGE -->
 		<script>
 		var ctx = document.getElementById("myBarChart").getContext("2d");

@@ -12,8 +12,12 @@ img {
 }
 
 /* Lettertypen */
-p, h1, h2, h3{
+p, h1, h2, h3, fieldset  {
 	font-family: 'Cabin Condensed', sans-serif;
+}
+
+legend {
+	font-weight: bold;
 }
 
 /* Basis opmaak pagina */
@@ -147,6 +151,26 @@ video#openingsfilm{
 
 /* Pagina 4 */
 #section3{
+	background-color: #E7F3F2;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Pagina 5 */
+#section4{
+	background-color: #FF69B4;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Pagina 6 */
+#section5{
 	background-color: #E7F3F2;
 	background-repeat: no-repeat;
 	background-position: center;
