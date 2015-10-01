@@ -86,13 +86,12 @@ p{
 video#bgvid {
     position: fixed;
     top: 50%;
-    z-index: 1;
     left: 50%;
+    z-index: -100;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
@@ -227,7 +226,7 @@ li{
 	left: 48%;
 	background-color: white;
 	border-radius: 50%;
-	padding: 11px;
+	padding: 15px;
 	margin-top: 50px;
 }
 
