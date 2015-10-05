@@ -21,209 +21,195 @@
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
-		$('#fullpage').fullpage({
-		verticalCentered: false,
-		css3:true,
-		slidesNavigation: true,
-		controlArrows: true,
-		resize : false,
-		paddingBottom: '10px',
-		fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-		menu: '#myMenu',
-		});
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				css3:true,
+				slidesNavigation: true,
+				controlArrows: true,
+				resize : false,
+				paddingBottom: '10px',
+				fixedElements: '#header, .footer',
+				responsiveWidth: 0,
+				responsiveHeight: 0,
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				menu: '#myMenu',
+			});
 		});
 		</script>
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
 		<script type="text/javascript">
 		$(document).ready(function() {
-		$('#fullpage').fullpage({
-		verticalCentered: false,
-		css3:true,
-		slidesNavigation: true,
-		controlArrows: true,
-		resize : false,
-		paddingBottom: '10px',
-		fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
-		menu: '#myMenu',
-		});
+			$('#fullpage').fullpage({
+          verticalCentered: false,
+          css3:true,
+		  slidesNavigation: true,
+		  controlArrows: true,
+		  resize : false,
+		  paddingBottom: '10px',
+		  fixedElements: '#header, .footer',
+		  responsiveWidth: 0,
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage'],
+			menu: '#myMenu',
+			});
 		});
 		</script>
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
 	</head>
-
 	<body>
-	<!-- PAGINA CONTENT -->
-
-	<!-- MENU -->
-	<div class="nav">
-		<ul id="menu">
-			<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-			<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-			<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-			<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-			<li data-menuanchor="6thpage"><a href="#6thpage">Bronnenlijst</a></li>
+		<!-- PAGINA CONTENT -->
+		<!-- MENU -->
+		<div class="nav">
+			<ul id="menu">
+				<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+				<li data-menuanchor="4rdPage"><a href="#4thpage">Fourth slide</a></li>
+				<li data-menuanchor="5thpage"><a href="#5thpage">Fifth slide</a></li>
+			</ul>
 		</ul>
 	</div>
-
 	<div id="openingsfilm">
-	<video autoplay loop muted id="bgvid">
-		<source src="openingsfilm.webm" type="video/webm">
-		<source src="openingsfilm.mp4" type="video/mp4">
-	</video>
+		<video autoplay loop muted id="bgvid">
+			<source src="openingsfilm.webm" type="video/webm">
+			<source src="openingsfilm.mp4" type="video/mp4">
+		</video>
 	</div>
-
 	<div id="fullpage">
-		<!-- POP UP SECTIE
-
-		Staat in test mode-->
-
 		<!-- PAGINA 1 -->
-
 		<div class="section" id="section0">
 			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
 			<br>
-			<a href="#secondPage" class="button-red animated pulse">Ga verder!</a>
+			<a href="#2" class="button-red animated pulse">Ga verder!</a>
 			<video autoplay loop muted id="bgvid">
-			<source src="landingsfilm.mp4" type="video/mp4">
-		  </video>
+				<source src="landingsfilm.mp4" type="video/mp4">
+			</video>
 		</div>
-
 		<!-- PAGINA 2 -->
-		<div class="section" id="section1"><h1>The history of the mobile phone</h1>
-			<div class="tijdlijn">
-				<!-- BLOCK L -->
-				<div class="blok">
-
-					<span class="tijdlijn-text"> 1995</span>
-
-
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+		<div class="section" id="section1"><h1>U heeft een beller!</h1>
+			<audio id="buzzingsound" preload="auto">
+				<source src="sound.mp3"></source>
+				</audio> <!-- Einde audio fragment-->
+				<a href="#section2"><img id="test" src="images/caller.png" alt="red ball"></a>
+		</div>
+			<!-- PAGINA 3-->
+			<div class="section" id="section2"><h1>History</h1>
+				<div class="tijdlijn">
+					<!-- BLOCK L -->
+					<div class="blok">
+						<span class="tijdlijn-text"> 1995</span>
+						<article class="tijdlijn-content">
+							<a class="tijdlijn-img" href="#non">
+								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+							</a>
+							<div class="tijdlijn-body">
+								<div class="text">
+									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+								</div>
+								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				<!-- BLOCK R -->
-				<div class="blok">
-
-					<span class="tijdlijn-text"> 1960</span>
-
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							<a href="#" class="readmore">Read more</a>
+						</article>
+					</div>
+					<!-- BLOCK R -->
+					<div class="blok">
+						<span class="tijdlijn-text"> 1960</span>
+						<article class="tijdlijn-content right">
+							<a class="tijdlijn-img" href="#non">
+								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+							</a>
+							<div class="tijdlijn-body">
+								<div class="text">
+									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+								</div>
+								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				<!-- BLOCK L -->
-				<div class="blok">
-
-					<span class="tijdlijn-text"> 1940</span>
-
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							<a href="#" class="readmore">Read more</a>
+						</article>
+					</div>
+					<!-- BLOCK L -->
+					<div class="blok">
+						<span class="tijdlijn-text"> 1940</span>
+						<article class="tijdlijn-content">
+							<a class="tijdlijn-img" href="#non">
+								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+							</a>
+							<div class="tijdlijn-body">
+								<div class="text">
+									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+								</div>
+								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
+							<a href="#" class="readmore">Read more</a>
+						</article>
+					</div>
+					</div><!-- TIJDLIJN -->
 				</div>
-			</div><!-- TIJDLIJN -->
-		 </div>
-
-		  <!-- PAGINA 3-->
-		  <div class="section" id="section2"><h1>Hier moet de tijdlijn verder gaan</h1>
-			<div id="contentBox">
-			  <div class="column-2">
-				<p>
-				  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-				</p>
-			  </div>
-			  <div class="column-2">
-				<p>
-				  feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-				</p>
-			  </div>
-			</div>
-		  </div>
-
-		  <!-- PAGINA 4 -->
-		  <div class="section" id="section3"><h1>Hier moet een grafiek komen</h1>
-			<div class="content">
-			  <p> Hier moet nog text komen! </p>
-			  <canvas id="myBarChart" width="400" height="400"></canvas>
-			  </div><!-- Content -->
-			</div>
-			
-			
-		  <!-- PAGINA 6 -->
-		  <div class="section" id="section5"><h1>Bronnenlijst</h1>
-			<div class="content">
-			  <p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>  
-			</div>
-		  </div>	
-
-		  </div><!-- FULLPAGE -->
-		<script>
-		var ctx = document.getElementById("myBarChart").getContext("2d");
-		var data = {
-		labels: ["1973", "1982", "1989", "1992", "1993", "1996", "1998", "2000"],
-		datasets: [
-		{
-		label: "Gewicht telefoons per jaar",
-		fillColor: "rgba(220,220,220,0.5)",
-		strokeColor: "rgba(220,220,220,0.8)",
-		highlightFill: "rgba(220,220,220,0.75)",
-		highlightStroke: "rgba(220,220,220,1)",
-		data: [794, 980, 348, 71, 510, 253, 151, 133]
-		},
-		{
-		label: "Hoogte telefoons per jaar",
-		fillColor: "rgba(151,187,205,0.5)",
-		strokeColor: "rgba(151,187,205,0.8)",
-		highlightFill: "rgba(151,187,205,0.75)",
-		highlightStroke: "rgba(151,187,205,1)",
-		data: [33, 30, 23, 11, 20, 15.8, 12.4, 11.3]
-		}
-		]
-		};
-		var myBarChart = new Chart(ctx).Bar(data);
-		</script>
-		<script>
-		$(document).ready(function() {
-		$.timeliner({});
-
-		});
-		</script>
-		<!-- FOOTER -->
-		<footer>
-			<!-- FOOTER CONTENT -->
-		</footer>
-	</body>
-</html>
+				<!-- PAGINA 4 -->
+				<div class="section" id="section3"><h1>Hier moet een grafiek komen</h1>
+					<div class="content">
+						<p> Hier moet nog text komen! </p>
+						<canvas id="myBarChart" width="400" height="400"></canvas>
+						</div><!-- Content -->
+					</div>
+					
+					
+					<!-- PAGINA 5 -->
+					<div class="section" id="section4"><h1>Bronnenlijst</h1>
+						<div class="content">
+							<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
+						</div>
+					</div>
+					</div><!-- FULLPAGE -->
+					<script>
+					$('#test').addClass('animated wobble');
+					</script><!-- Einde animatie -->
+					<script type="text/javascript">
+					window.onload=function(){
+					// collecting elements
+					var buzzingsound = document.getElementById('buzzingsound');
+					var HoerenNeuken=document.getElementById('test');
+					//playing welcome sound on mouse over
+					HoerenNeuken.onmouseover=function(){
+					buzzingsound.play();
+					return false;
+					};
+					};
+					</script> <!-- Einde plaatje link -->
+					<script>
+					var ctx = document.getElementById("myBarChart").getContext("2d");
+					var data = {
+					labels: ["1973", "1982", "1989", "1992", "1993", "1996", "1998", "2000"],
+					datasets: [
+					{
+					label: "Gewicht telefoons per jaar",
+					fillColor: "rgba(220,220,220,0.5)",
+					strokeColor: "rgba(220,220,220,0.8)",
+					highlightFill: "rgba(220,220,220,0.75)",
+					highlightStroke: "rgba(220,220,220,1)",
+					data: [794, 980, 348, 71, 510, 253, 151, 133]
+					},
+					{
+					label: "Hoogte telefoons per jaar",
+					fillColor: "rgba(151,187,205,0.5)",
+					strokeColor: "rgba(151,187,205,0.8)",
+					highlightFill: "rgba(151,187,205,0.75)",
+					highlightStroke: "rgba(151,187,205,1)",
+					data: [33, 30, 23, 11, 20, 15.8, 12.4, 11.3]
+					}
+					]
+					};
+					var myBarChart = new Chart(ctx).Bar(data);
+					</script>
+					<script>
+					$(document).ready(function() {
+					$.timeliner({});
+					});
+					</script>
+					<!-- FOOTER -->
+					<footer>
+						<!-- FOOTER CONTENT -->
+					</footer>
+				</body>
+			</html>
