@@ -48,6 +48,7 @@ p{
 .bigasstitle{
     font-size: 100px;
     color: #fff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     padding-top: 90px;
 }
 
@@ -123,6 +124,8 @@ video#openingsfilm{
 	display: block;
 }
 
+
+
 /* Pagina 2 */
 #section1{
 	background-color: blue;
@@ -190,12 +193,9 @@ li{
 	display:inline-block;
 }
 
-.toTop{
-	position: fixed;
-	top: 80%;
-	left: 90%;
-	z-index: 70;
-	}
+/* Telefoon header in nav */
+
+
 
 
 /* TIJDLIJN */
