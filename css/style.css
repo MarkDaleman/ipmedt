@@ -31,6 +31,16 @@ p{
 	margin-right: 10px;
 }
 
+/* grote telefoon */
+#test {
+    height: 500px;
+    width: 250px;
+  	margin-left: 40%;
+    display: block;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
 /* Grote rode knop en titel*/
 .button-red{
 	display:table;
