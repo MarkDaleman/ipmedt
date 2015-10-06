@@ -31,6 +31,16 @@ p{
 	margin-right: 10px;
 }
 
+/* grote telefoon */
+#test {
+    height: 500px;
+    width: 250px;
+  	margin-left: 40%;
+    display: block;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
 /* Grote rode knop en titel*/
 .button-red{
 	display:table;
@@ -52,6 +62,7 @@ p{
 .bigasstitle{
     font-size: 100px;
     color: #fff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     padding-top: 90px;
 }
 
@@ -126,6 +137,8 @@ video#openingsfilm{
 	height: auto;
 	display: block;
 }
+
+
 
 /* Pagina 2 */
 #section1{
@@ -214,12 +227,9 @@ li{
 	display:inline-block;
 }
 
-.toTop{
-	position: fixed;
-	top: 80%;
-	left: 90%;
-	z-index: 70;
-	}
+/* Telefoon header in nav */
+
+
 
 
 /* TIJDLIJN */
