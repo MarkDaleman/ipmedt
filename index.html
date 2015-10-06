@@ -24,58 +24,8 @@
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/Chart.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					 //Navigation
-        menu: false,
-        lockAnchors: false,
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',  '5thpage','lastPage'],
-		menu: '#menu',
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
-
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 1000,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 1000,
-        scrollBar: false,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: true,
-        continuousVertical: false,
-        normalScrollElements: '#element1, .element2',
-
-        //Accessibility
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
-
-        //Design
-        controlArrows: true,
-        verticalCentered: false,
-        resize : false,
-        paddingTop: '4em',
-        paddingBottom: '10px',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-
-
-        //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-				});
-			});
-		</script>
+		<script type="text/javascript" src="js/scrolling.js"></script>
+		
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
 	</head>
@@ -87,8 +37,8 @@
 				<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
 				<li data-menuanchor="secondPage"><a href="#secondPage">Beller</a></li>
 				<li data-menuanchor="3rdPage"><a href="#3rdPage">Geschiedenis</a></li>
-				<li data-menuanchor="4rdPage"><a href="#4thpage">Grafieken / Slides</a></li>
-				<li data-menuanchor="5thpage"><a href="#5thpage">Bronnen</a></li>
+				<li data-menuanchor="4rdPage"><a href="#7thpage">Grafieken / Slides</a></li>
+				<li data-menuanchor="5thpage"><a href="#lastPage">Bronnen</a></li>
 			</ul>
 		</ul>
 	</div>
@@ -99,7 +49,8 @@
 		</video>
 	</div>
 	<div id="fullpage">
-		<!-- PAGINA 1 -->
+	
+		<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
 		<div class="section" id="section0">
 			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
 			<br>
@@ -108,163 +59,408 @@
 				<source src="landingsfilm.mp4" type="video/mp4">
 			</video>
 		</div>
-		<!-- PAGINA 2 -->
-		<div class="section" id="section1"><h1>U heeft een beller!</h1>
+		
+		<!-- PAGINA 2 - BELLER-->
+		<div class="section" id="section1">
+		<h1>U heeft een beller!</h1>
 			<audio id="buzzingsound" preload="auto">
 				<source src="sound.mp3"></source>
-				</audio> <!-- Einde audio fragment-->
-				<a href="#section2"><img id="iphone" src="images/caller.png" alt="iphone"></a>
-			</div>
-			<!-- PAGINA 3-->
-			<div class="section" id="section2"><h1>History</h1>
-				<div class="tijdlijn">
-					<!-- BLOCK L -->
-					<div class="blok">
-						<span class="tijdlijn-text"> 1995</span>
-						<article class="tijdlijn-content">
-							<a class="tijdlijn-img" href="#non">
-								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-							</a>
-							<div class="tijdlijn-body">
-								<div class="text">
-									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-								</div>
-								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+			</audio> <!-- Einde audio fragment-->
+			<a href="#section2"><img id="iphone" src="images/caller.png" alt="iphone"></a>
+		</div>
+		
+		<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
+		<div class="section" id="section2">
+		<h1>History</h1>
+			<div class="tijdlijn">
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1995</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
 							</div>
-							<a href="#" class="readmore">Read more</a>
-						</article>
-					</div>
-					<!-- BLOCK R -->
-					<div class="blok">
-						<span class="tijdlijn-text"> 1960</span>
-						<article class="tijdlijn-content right">
-							<a class="tijdlijn-img" href="#non">
-								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-							</a>
-							<div class="tijdlijn-body">
-								<div class="text">
-									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-								</div>
-								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-							</div>
-							<a href="#" class="readmore">Read more</a>
-						</article>
-					</div>
-					<!-- BLOCK L -->
-					<div class="blok">
-						<span class="tijdlijn-text"> 1940</span>
-						<article class="tijdlijn-content">
-							<a class="tijdlijn-img" href="#non">
-								<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-							</a>
-							<div class="tijdlijn-body">
-								<div class="text">
-									<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-								</div>
-								<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-							</div>
-							<a href="#" class="readmore">Read more</a>
-						</article>
-					</div>
-					</div><!-- TIJDLIJN -->
-				</div>
-				<!-- PAGINA 4 -->
-				<div class="section" id="section3">
-					<div class="slide" id="slide1" data-anchor="slide1">
-						<div class="content">
-							<h1>Slides Enzo</h1>
-							<p>
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-							</p>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 						</div>
-					</div>
-					<div class="slide" id="slide2" data-anchor="slide2">
-						<h1>Slide 2</h1>
-													<p>
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-							</p>
-					</div>
-					<div class="slide" id="slide3" data-anchor="slide3">
-						<h1>Slide 3</h1>
-													<p>
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-							</p>
-					</div>	<div class="slide" id="slide3" data-anchor="slide3">
-					<h1>Slide 4</h1>
-												<p>
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-							</p>
+						<a href="#" class="readmore">Read more</a>
+					</article>
 				</div>
-				<div class="slide" id="slide3" data-anchor="slide3">
-					<h1>Slide 5</h1>
-												<p>
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-								You can even click on the navigation and jump directly to another section.
-							</p>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1940</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+			</div><!-- TIJDLIJN -->
+		</div>
+				
+		<!-- PAGINA 4 - TWEEDE PAGINA GESCHIEDENIS-->
+		<div class="section" id="section3">
+			<div class="tijdlijn">
+								<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1995</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1940</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
 				</div>
 			</div>
-			
-			<!-- PAGINA 5 -->
-			<div class="section" id="section4"><h1>Bronnenlijst</h1>
+		</div>
+		
+		<!-- PAGINA 5 - DERDE PAGINA GESCHIEDENIS-->
+		<div class="section" id="section4">
+			<div class="tijdlijn">
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1995</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1940</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+			</div>
+		</div>
+		
+		<!-- PAGINA 6 - VIERDE PAGINA GESCHIEDENIS-->
+		<div class="section" id="section5">
+			<div class="tijdlijn">
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1995</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK L -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1940</span>
+					<article class="tijdlijn-content">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+				
+				<!-- BLOCK R -->
+				<div class="blok">
+					<span class="tijdlijn-text"> 1960</span>
+					<article class="tijdlijn-content right">
+						<a class="tijdlijn-img" href="#non">
+							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
+						</a>
+						<div class="tijdlijn-body">
+							<div class="text">
+								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+							</div>
+							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
+						</div>
+						<a href="#" class="readmore">Read more</a>
+					</article>
+				</div>
+			</div>
+		</div>
+		
+		<!-- PAGINA 7 - SLIDES WERELD -->
+		<div class="section" id="section6">
+			<div class="slide" id="slide1" data-anchor="slide1">
 				<div class="content">
-					<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
+					<h1>Slides Enzo</h1>
+					<p>
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+						You can even click on the navigation and jump directly to another section.
+					</p>
 				</div>
 			</div>
+			<div class="slide" id="slide2" data-anchor="slide2">
+				<h1>Slide 2</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 3</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>	
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 4</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 5</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>
+		</div>
+			
+		<!-- PAGINA 8 - BRONNENLIJST -->
+		<div class="section" id="section7">
+		<h1>Bronnenlijst</h1>
+			<div class="content">
+				<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
+			</div>
+		</div>
 
-			</div><!-- FULLPAGE -->
+		</div><!-- FULLPAGE -->
 
-			<script>
-			$('#iphone').addClass('animated wobble');
-			</script><!-- Einde animatie -->
-			<script type="text/javascript">
-			window.onload=function(){
-			// collecting elements
-			var buzzingsound = document.getElementById('buzzingsound');
-			var geluid=document.getElementById('iphone');
-			//playing welcome sound on mouse over
-			geluid.onmouseover=function(){
-			buzzingsound.play();
-			return false;
-			};
-			};
-			</script> <!-- Einde plaatje link -->
-			<!-- FOOTER -->
-			<footer>
-				<!-- FOOTER CONTENT -->
-			</footer>
-		</body>
-	</html>
+		<script>
+		$('#iphone').addClass('animated wobble');
+		</script><!-- Einde animatie -->
+		<script type="text/javascript">
+		window.onload=function(){
+		// collecting elements
+		var buzzingsound = document.getElementById('buzzingsound');
+		var geluid=document.getElementById('iphone');
+		//playing welcome sound on mouse over
+		geluid.onmouseover=function(){
+		buzzingsound.play();
+		return false;
+		};
+		};
+		</script> <!-- Einde plaatje link -->
+		<!-- FOOTER -->
+		<footer>
+			<!-- FOOTER CONTENT -->
+		</footer>
+	</body>
+</html>

@@ -117,8 +117,6 @@ video#openingsfilm{
 	display: block;
 }
 
-
-
 /* Pagina 2 */
 #section1{
 	background-color: blue;
@@ -131,8 +129,8 @@ video#openingsfilm{
 	display: block;
 }
 
-/* Pagina 3 */
-#section2{
+/* Pagina 3, 4, 5 en 6 */
+#section2, #section3, #section4, #section5{
 	background-color: #99ABB0;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -141,8 +139,8 @@ video#openingsfilm{
 	display: block;
 }
 
-/* Pagina 4 */
-#section3{
+/* Pagina 7 */
+#section6{
 	background-color: #E7F3F2;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -151,8 +149,8 @@ video#openingsfilm{
 	display: block;
 }
 
-/* Pagina 5 */
-#section4{
+/* Pagina 8 */
+#section7{
 	background-color: #FF69B4;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -161,15 +159,6 @@ video#openingsfilm{
 	display: block;
 }
 
-/* Pagina 6 */
-#section5{
-	background-color: #E7F3F2;
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
 
 /* Navigatie */
 .nav{
