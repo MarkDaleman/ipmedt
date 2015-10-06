@@ -27,20 +27,55 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
-					verticalCentered: false,
-					css3:true,
-					slidesNavigation: true,
-					controlArrows: true,
-					resize : false,
-					paddingBottom: '10px',
-					fixedElements: '#header, .footer',
-					responsiveWidth: 0,
-					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage'],
-					menu: '#myMenu',
+					 //Navigation
+        menu: false,
+        lockAnchors: false,
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',  '5thpage','lastPage'],
+		menu: '#menu',
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 1000,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: false,
+        resize : false,
+        paddingTop: '4em',
+        paddingBottom: '10px',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 				});
 			});
 		</script>
-		
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
 	</head>
@@ -49,11 +84,11 @@
 		<!-- MENU -->
 		<div class="nav">
 			<ul id="menu">
-				<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-				<li data-menuanchor="4rdPage"><a href="#4thpage">Fourth slide</a></li>
-				<li data-menuanchor="5thpage"><a href="#5thpage">Fifth slide</a></li>
+				<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage">Beller</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage">Geschiedenis</a></li>
+				<li data-menuanchor="4rdPage"><a href="#4thpage">Grafieken / Slides</a></li>
+				<li data-menuanchor="5thpage"><a href="#5thpage">Bronnen</a></li>
 			</ul>
 		</ul>
 	</div>
@@ -78,8 +113,8 @@
 			<audio id="buzzingsound" preload="auto">
 				<source src="sound.mp3"></source>
 				</audio> <!-- Einde audio fragment-->
-				<a href="#section2"><img id="test" src="images/caller.png" alt="red ball"></a>
-		</div>
+				<a href="#section2"><img id="iphone" src="images/caller.png" alt="iphone"></a>
+			</div>
 			<!-- PAGINA 3-->
 			<div class="section" id="section2"><h1>History</h1>
 				<div class="tijdlijn">
@@ -134,69 +169,102 @@
 					</div><!-- TIJDLIJN -->
 				</div>
 				<!-- PAGINA 4 -->
-				<div class="section" id="section3"><h1>Hier moet een grafiek komen</h1>
-					<div class="content">
-						<p> Hier moet nog text komen! </p>
-						<canvas id="myBarChart" width="400" height="400"></canvas>
-						</div><!-- Content -->
-					</div>
-					
-					
-					<!-- PAGINA 5 -->
-					<div class="section" id="section4"><h1>Bronnenlijst</h1>
+				<div class="section" id="section3">
+					<div class="slide" id="slide1" data-anchor="slide1">
 						<div class="content">
-							<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
+							<h1>Slides Enzo</h1>
+							<p>
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+							</p>
 						</div>
 					</div>
-					</div><!-- FULLPAGE -->
-					<script>
-					$('#test').addClass('animated wobble');
-					</script><!-- Einde animatie -->
-					<script type="text/javascript">
-					window.onload=function(){
-					// collecting elements
-					var buzzingsound = document.getElementById('buzzingsound');
-					var HoerenNeuken=document.getElementById('test');
-					//playing welcome sound on mouse over
-					HoerenNeuken.onmouseover=function(){
-					buzzingsound.play();
-					return false;
-					};
-					};
-					</script> <!-- Einde plaatje link -->
-					<script>
-					var ctx = document.getElementById("myBarChart").getContext("2d");
-					var data = {
-					labels: ["1973", "1982", "1989", "1992", "1993", "1996", "1998", "2000"],
-					datasets: [
-					{
-					label: "Gewicht telefoons per jaar",
-					fillColor: "rgba(220,220,220,0.5)",
-					strokeColor: "rgba(220,220,220,0.8)",
-					highlightFill: "rgba(220,220,220,0.75)",
-					highlightStroke: "rgba(220,220,220,1)",
-					data: [794, 980, 348, 71, 510, 253, 151, 133]
-					},
-					{
-					label: "Hoogte telefoons per jaar",
-					fillColor: "rgba(151,187,205,0.5)",
-					strokeColor: "rgba(151,187,205,0.8)",
-					highlightFill: "rgba(151,187,205,0.75)",
-					highlightStroke: "rgba(151,187,205,1)",
-					data: [33, 30, 23, 11, 20, 15.8, 12.4, 11.3]
-					}
-					]
-					};
-					var myBarChart = new Chart(ctx).Bar(data);
-					</script>
-					<script>
-					$(document).ready(function() {
-					$.timeliner({});
-					});
-					</script>
-					<!-- FOOTER -->
-					<footer>
-						<!-- FOOTER CONTENT -->
-					</footer>
-				</body>
-			</html>
+					<div class="slide" id="slide2" data-anchor="slide2">
+						<h1>Slide 2</h1>
+													<p>
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+							</p>
+					</div>
+					<div class="slide" id="slide3" data-anchor="slide3">
+						<h1>Slide 3</h1>
+													<p>
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+							</p>
+					</div>	<div class="slide" id="slide3" data-anchor="slide3">
+					<h1>Slide 4</h1>
+												<p>
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+							</p>
+				</div>
+				<div class="slide" id="slide3" data-anchor="slide3">
+					<h1>Slide 5</h1>
+												<p>
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+								You can even click on the navigation and jump directly to another section.
+							</p>
+				</div>
+			</div>
+			
+			<!-- PAGINA 5 -->
+			<div class="section" id="section4"><h1>Bronnenlijst</h1>
+				<div class="content">
+					<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
+				</div>
+			</div>
+
+			</div><!-- FULLPAGE -->
+
+			<script>
+			$('#iphone').addClass('animated wobble');
+			</script><!-- Einde animatie -->
+			<script type="text/javascript">
+			window.onload=function(){
+			// collecting elements
+			var buzzingsound = document.getElementById('buzzingsound');
+			var geluid=document.getElementById('iphone');
+			//playing welcome sound on mouse over
+			geluid.onmouseover=function(){
+			buzzingsound.play();
+			return false;
+			};
+			};
+			</script> <!-- Einde plaatje link -->
+			<!-- FOOTER -->
+			<footer>
+				<!-- FOOTER CONTENT -->
+			</footer>
+		</body>
+	</html>
