@@ -43,8 +43,10 @@ p{
     width: 250px;
   	margin-left: 40%;
     display: block;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-iteration-count: infinite;
 }
 
 /* Grote rode knop en titel*/
@@ -60,9 +62,12 @@ p{
 	background-color: blue;
 	font-size:30px;
 	padding: 18px;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 2000ms;
+	-webkit-animation-delay: 1000ms;
 	-webkit-animation-iteration-count: infinite;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-delay: 1000ms;
+	-moz-animation-iteration-count: infinite;
 }
 
 .bigasstitle{
@@ -92,6 +97,7 @@ video#bgvid {
     width: auto;
     height: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
