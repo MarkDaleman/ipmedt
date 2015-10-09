@@ -14,10 +14,10 @@
 		<title>Opkomst mobiele telefoon</title>
 		
 		<!-- CSS  -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
 		
 		<!-- JAVASCRIPT -->
 
@@ -32,6 +32,7 @@
 		<script type="text/javascript" src="js/Chart.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
 		<script type="text/javascript" src="js/scrolling.js"></script>
+
 		<script type="text/javascript" src="js/gettijd.js"></script>
 		
 		<!-- GOOGLE FONTS -->
@@ -296,6 +297,7 @@
 						<a href="#" class="readmore">Read more</a>
 					</article>
 				</div>
+
 			</div>
 		</div>
 		
@@ -402,6 +404,7 @@
 			</div>
 		</div>
 
+
 		</div><!-- FULLPAGE -->
 
 		<script>
@@ -415,8 +418,12 @@
 		//playing welcome sound on mouse over
 		geluid.onmouseover=function(){
 		buzzingsound.play();
-		return false;
 		};
+		geluid.onclick=function(){
+		buzzingsound.pause();
+		
+		};
+
 		};
 		</script> <!-- Einde plaatje link -->
 		<!-- FOOTER -->
