@@ -6,6 +6,12 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 
 
+@font-face{
+	font-family: NokiaFont;
+	src: url(./fonts/nokiafc22.ttf);
+}
+
+
 /* Foto's responsive maken */
 img {
 	width: 100%;
@@ -14,9 +20,10 @@ img {
 
 
 /* Lettertypen */
-p, h1, h2, h3, fieldset  {
+p, h1, h2, h3, fieldset, #navTijd{
 	font-family: 'Cabin Condensed', sans-serif;
 }
+
 
 legend {
 	font-weight: bold;
@@ -38,8 +45,12 @@ p{
     width: 250px;
   	margin-left: 40%;
     display: block;
-    -webkit-animation-duration: 2s;
+
+    -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-iteration-count: infinite;
+
 }
 
 /* Grote rode knop en titel*/
@@ -55,9 +66,12 @@ p{
 	background-color: blue;
 	font-size:30px;
 	padding: 18px;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 2000ms;
+	-webkit-animation-delay: 1000ms;
 	-webkit-animation-iteration-count: infinite;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-delay: 1000ms;
+	-moz-animation-iteration-count: infinite;
 }
 
 .bigasstitle{
@@ -87,6 +101,7 @@ video#bgvid {
     width: auto;
     height: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
@@ -119,9 +134,8 @@ video#openingsfilm{
 
 /* Pagina 2 */
 #section1{
-	background-color: blue;
+	background-color: #6e7a7d;
 	z-index: 2;
-	background-color: #0F82AE;
 	background-repeat: no-repeat;
 	background-position: center;
 	max-width: 100%;
@@ -151,13 +165,17 @@ video#openingsfilm{
 
 /* Pagina 8 */
 #section7{
-	background-color: #FF69B4;
+
+	background-color: #E7F3F2;
+
 	background-repeat: no-repeat;
 	background-position: center;
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
+
+
 
 /* Navigatie */
 .nav{
@@ -185,14 +203,46 @@ video#openingsfilm{
 	margin: 0% 1%;
 }
 
+#menu a {
+	font-size: 2em;
+	color: #000;
+}
+
 #menu a:link, a:visited {
     text-align: center;
     text-decoration: none;
     padding: 4px;
 	background-color: #EE5322;
+	font-size: 2em;
+	
 }
 
 /* Telefoon header in nav */
+
+
+
+#navLogo{
+	height: 50px;
+	width: auto;
+	vertical-align: middle;
+	margin: 5px 15px;
+}
+
+#navTijd{
+	font-size: 3em;
+	z-index: 100;
+	color: #000;
+}
+
+.navOnklikbaar{
+	float: right !important;
+}
+
+#navUitleg{
+	font-size: 2em;
+}
+/* Telefoon header in nav */
+
 
 
 

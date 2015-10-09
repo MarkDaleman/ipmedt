@@ -4,7 +4,9 @@ $(document).ready(function() {
 		//Navigatie
 		menu: false,
 		lockAnchors: false,
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',  '5thpage', '6thpage', '7thpage', 'lastPage'],
+
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',  '5thpage', '6thpage', '7thpage', '8thpage'],
+
 		menu: '#menu',
 		showActiveTooltip: false,
 		slidesNavigation: false,
