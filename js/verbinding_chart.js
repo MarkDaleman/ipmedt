@@ -80,8 +80,8 @@ function drawMap() {
 var options = {};
 	options['dataMode'] = 'regions';
 	options['colors'] = [0xFFB581, 0xFF8747, 0xC06000]; //orange colors
-	options['width'] = '100%';
-	options['height'] = '100%';
+	options['width'] = '1000px';
+	options['keepAspectRatio'] = 'true';
 
 var container = document.getElementById('verbinding_chart');
 var geomap = new google.visualization.GeoMap(container);
