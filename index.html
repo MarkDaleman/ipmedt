@@ -23,20 +23,15 @@
 
 
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script type ="text/javascript" src="js/abonnementen.js"></script>
-		<script type ="text/javascript" src="js/aansluitingen.js"></script>
-		<script type ="text/javascript" src="js/regio.js"></script>
-		<script type ="text/javascript" src="js/mob_chart.js"></script>
-		<script type ="text/javascript" src="js/pop_chart.js"></script>
-		<script type ="text/javascript" src="js/verbinding_chart.js"></script>
-		<script type ="text/javascript" src="js/chart_main.js"></script>
+		<script type="text/javascript" src="js/mob_chart.js"></script>
+		<script type="text/javascript" src="js/pop_chart.js"></script>
+		<script type="text/javascript" src="js/verbinding_chart.js"></script>
 		
 		<script type="text/javascript" src="js/timeliner.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/Chart.js"></script>
-		<script type="text/javascript" src="js/showfrontpage.js"></script>
+		<!--<script type="text/javascript" src="js/showfrontpage.js"></script>-->
 		<script type="text/javascript" src="js/scrolling.js"></script>
-
 		<script type="text/javascript" src="js/gettijd.js"></script>
 		
 		<!-- GOOGLE FONTS -->
@@ -51,18 +46,21 @@
 				<li data-menuanchor="secondPage"><a href="#secondPage"><img src="./images/bellen.png" id="navLogo" /></a></li>
 				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenis.png" id="navLogo" /></a></li>
 				<li data-menuanchor="7thPage"><a href="#7thpage"><img src="./images/grafiek.png" id="navLogo" /></a></li>
-				<li data-menuanchor="8thPage"><a href="#8thpage"><img src="./images/bronnen.png" id="navLogo" /></a></li>
+				<li data-menuanchor="8thPage"><a href="#8thpage"><img src="./images/book.png" id="navLogo" /></a></li>
+				<li id="navUitleg"></li>
 				<li class="navOnklikbaar"><p id="navTijd"></p></li>
-				<li class="navOnklikbaar"><img src="./images/synchro.png" id="navLogo" /> <img src="./images/wifi.svg" id="navLogo"/><img src="./images/batterij.svg" id="navLogo" /></li>
+				<li class="navOnklikbaar"><img src="./images/wifi.svg" id="navLogo"/><img src="./images/batterij.svg" id="navLogo" /></li>
 			</ul>
 		</ul>
 	</div>
+	<!--
 	<div id="openingsfilm">
 		<video autoplay loop muted id="bgvid">
 			<source src="openingsfilm.webm" type="video/webm">
 			<source src="openingsfilm.mp4" type="video/mp4">
 		</video>
 	</div>
+-->
 	<div id="fullpage">	
 		<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
 		<div class="section" id="section0">
@@ -86,115 +84,57 @@
 		<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
 		<div class="section" id="section2">
 		<h1>History</h1>
-			<div class="tijdlijn">
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1995</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1940</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-			</div><!-- TIJDLIJN -->
+		<div class="tijdlijn"></div>
+		<table style="width:100%">
+  <tr>
+    <td class="tabel-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</td>
+    <td> <img class="tijdlijn_foto" src="http://placehold.it/200x200"/></td>		
+  </tr>
+  <tr>
+    <td> <img class="tijdlijn_foto" src="http://placehold.it/200x200"/></td>		
+    <td class="tabel-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</td>		
+  </tr>
+  <tr>
+    <td class="tijdlijn_plaatje" class="tabel-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</td>
+    <td> <img class="tijdlijn_foto" src="http://placehold.it/200x200"/></td>			
+  </tr>
+  <tr>
+    <td> <img class="tijdlijn_foto" src="http://placehold.it/200x200"/></td>			
+  	<td class="tabel-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</td>
+  </tr>
+</table>
 		</div>
 				
 		<!-- PAGINA 4 - TWEEDE PAGINA GESCHIEDENIS-->
 		<div class="section" id="section3">
 			<div class="tijdlijn">
-								<!-- BLOCK L -->
+								<!-- BLOCK MEDIA L -->
 				<div class="blok">
 					<span class="tijdlijn-text"> 1995</span>
 					<article class="tijdlijn-content">
 						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
 						</a>
 						<div class="tijdlijn-body">
 							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
+								MEDIA
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
 					</article>
 				</div>
 				
-				<!-- BLOCK R -->
+				<!-- BLOCK R TEXT -->
 				<div class="blok">
 					<span class="tijdlijn-text"> 1960</span>
 					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
 						<div class="tijdlijn-body">
 							<div class="text">
 								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 						</div>
 						<a href="#" class="readmore">Read more</a>
 					</article>
 				</div>
 				
-				<!-- BLOCK L -->
+				<!-- BLOCK L  TEXT-->
 				<div class="blok">
 					<span class="tijdlijn-text"> 1940</span>
 					<article class="tijdlijn-content">
@@ -205,26 +145,16 @@
 							<div class="text">
 								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
 							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
 						</div>
 						<a href="#" class="readmore">Read more</a>
 					</article>
 				</div>
 				
-				<!-- BLOCK R -->
+				<!-- BLOCK R  MEDIA-->
 				<div class="blok">
 					<span class="tijdlijn-text"> 1960</span>
 					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
+						<p> MEDIA </p>
 					</article>
 				</div>
 			</div>
@@ -232,164 +162,34 @@
 		
 		<!-- PAGINA 5 - DERDE PAGINA GESCHIEDENIS-->
 		<div class="section" id="section4">
-			<div class="tijdlijn">
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1995</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1940</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-
-			</div>
+			
 		</div>
 		
 		<!-- PAGINA 6 - VIERDE PAGINA GESCHIEDENIS-->
 		<div class="section" id="section5">
-			<div class="tijdlijn">
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1995</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK L -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1940</span>
-					<article class="tijdlijn-content">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-				
-				<!-- BLOCK R -->
-				<div class="blok">
-					<span class="tijdlijn-text"> 1960</span>
-					<article class="tijdlijn-content right">
-						<a class="tijdlijn-img" href="#non">
-							<img src="http://lorempixum.com/50/50/people/1" alt="" width="50" height="50" />
-						</a>
-						<div class="tijdlijn-body">
-							<div class="text">
-								<p>Bacon ipsum dolor amet picanha ham capicola sirloin venison ball tip pancetta alcatra, brisket salami chicken jerky strip steak drumstick prosciutto.</p>
-							</div>
-							<p class="attribution">Gebeurde op 2:00 in Amsterdam!</p>
-						</div>
-						<a href="#" class="readmore">Read more</a>
-					</article>
-				</div>
-			</div>
+		
 		</div>
 		
 		<!-- PAGINA 7 - SLIDES WERELD -->
 		<div class="section" id="section6">
-			<div class="content">
-				<p id="chart_intro"></p>
-				<div class="chart" id="abonnementen_chart"></div>
-				<div class="chart" id="aansluitingen_chart"></div>
-				<div class="chart" id="regio_chart"></div>
-				<div class="chart" id="pop_chart"></div>
-				<div class="chart" id="mob_chart"></div>
-				<div class="chart" id="verbinding_chart"></div>
-		
-				<ul id="knoppen"> </ul>
-			</div>	
+			<div class="slide" id="slide1" data-anchor="slide1">
+				<div class="content">
+					<h1>Aantal inwoners per land (in miljoenen)</h1>
+					<div id="pop_chart"></div>
+				</div>
+			</div>
+			<div class="slide" id="slide2" data-anchor="slide2">
+				<div class="content">
+					<h1>Aantal mobiele telefoons (in miljoenen)</h1>
+					<div id="mob_chart"></div>
+				</div>
+			</div>
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<div class="content">
+					<h1>Aantal mobiele telefoons per 100 inwoners</h1>
+					<div id="verbinding_chart"></div>
+				</div>
+			</div>
 		</div>
 			
 		<!-- PAGINA 8 - BRONNENLIJST -->
@@ -399,7 +199,6 @@
 				<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
 			</div>
 		</div>
-
 
 		</div><!-- FULLPAGE -->
 
@@ -417,9 +216,8 @@
 		};
 		geluid.onclick=function(){
 		buzzingsound.pause();
-		
-		};
 
+		};
 		};
 		</script> <!-- Einde plaatje link -->
 		<!-- FOOTER -->
