@@ -5,10 +5,12 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 	margin: 0;
 }
 
+
 @font-face{
 	font-family: NokiaFont;
 	src: url(./fonts/nokiafc22.ttf);
 }
+
 
 /* Foto's responsive maken */
 img {
@@ -42,10 +44,12 @@ p{
     width: 250px;
   	margin-left: 40%;
     display: block;
+
     -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
 	-moz-animation-duration: 2000ms;
 	-moz-animation-iteration-count: infinite;
+
 }
 
 /* Grote rode knop en titel*/
@@ -121,54 +125,48 @@ video#openingsfilm{
 
 
 /* Sections (Pagina's)*/
+#section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
-/* Pagina 1 */
+/* Achtergrond kleuren */
 #section0{
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* Pagina 2 */
-#section1{
-	background-color: #6e7a7d;
+	background-color: rgba(52, 52, 52, 1.0);
 	z-index: 2;
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 100%;
-	height: auto;
-	display: block;
 }
 
-/* Pagina 3, 4, 5 en 6 */
-#section2, #section3, #section4, #section5{
-	background-color: #99ABB0;
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
+#section1{
+	z-index: 2;
+	background-color: rgba(52, 52, 52, 0.9);
+	}
 
-/* Pagina 7 */
+#section2{
+	background-color: rgba(52, 52, 52, 0.8);
+	}
+	
+#section3{
+	background-color: rgba(52, 52, 52, 0.7);
+	}
+	
+#section4{
+	background-color: rgba(52, 52, 52, 0.6);
+	}
+	
+#section5{
+	background-color: rgba(52, 52, 52, 0.5);
+	}
+	
 #section6{
-	background-color: #E7F3F2;
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* Pagina 8 */
+	background-color: rgba(52, 52, 52, 0.4);
+	}
+	
 #section7{
-	background-color: #E7F3F2;
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
+	background-color: rgba(52, 52, 52, 0.3);
+	}
 
 
 /* Navigatie */
@@ -176,7 +174,7 @@ video#openingsfilm{
     position:fixed;
     top:0;
     left:0;
-    height: 60px;
+    height: 65px;
     z-index: 70;
     width: 100%;
     padding: 0;
@@ -184,10 +182,16 @@ video#openingsfilm{
     list-style-type: none;
     background-color: #EE5322;
 }
+#menu{
+	height:65px;
+}
 
 #menu li{
     display: inline;
     float: left;
+	vertical-align: middle;
+	line-height:65px;
+	margin: 0% 1%;
 }
 
 #menu a {
@@ -204,20 +208,13 @@ video#openingsfilm{
 	
 }
 
-li{
-	margin:0px auto;
-	text-decoration: none;
-	vertical-align: middle;
-	height: 30px;
-	color: #EE5322;
-	display:inline-block;
-}
-
+/* Telefoon header in nav */
 #navLogo{
 	height: 50px;
 	width: auto;
 	vertical-align: middle;
-	margin: 5px 15px;
+	margin-bottom: 8px;
+	margin-right: 20px;
 }
 
 #navTijd{
@@ -228,20 +225,13 @@ li{
 
 .navOnklikbaar{
 	float: right !important;
+	margin-right: 10px !important;
 }
-
-#navUitleg{
-	font-size: 2em;
-}
-/* Telefoon header in nav */
-
-
-
 
 /* TIJDLIJN */
 
 .tijdlijn::before {
-	/* this is the vertical line */
+	/* De tijdlijn zelf */
 	content: '';
 	position: absolute;
 	top: 0;

@@ -79,8 +79,8 @@ function drawMap() {
 
 var options = {};
 options['dataMode'] = 'regions';
-options['width'] = '100%';
-options['height'] = '100%';
+options['width'] = '1000px';
+options['keepAspectRatio'] = 'true';
 
 var container = document.getElementById('mob_chart');
 var geomap = new google.visualization.GeoMap(container);
