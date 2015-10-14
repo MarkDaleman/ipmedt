@@ -481,8 +481,8 @@
               scope.hover.x = event.clientX;
               scope.hover.y = event.clientY;
               return tooltip.css({
-                left: scope.hover.x,
-                top: scope.hover.y + 40 
+                left: scope.hover.x - 70,
+                top: scope.hover.y + 20 
               });
             };
             resize = function() {
