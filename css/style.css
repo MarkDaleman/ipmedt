@@ -5,6 +5,38 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 	margin: 0;
 }
 
+.vis-time-axis .vis-text {
+	color: darkorange !important;
+}
+
+.item_title{
+	color: darkorange;
+}
+
+#dialog-message1{
+	display: none;
+	color: darkorange;
+}
+#dialog-message2{
+	display: none;
+	color: darkorange;
+}
+#dialog-message3{
+	display: none;
+	color: darkorange;
+}
+#dialog-message4{
+	display: none;
+	color: darkorange;
+}
+#dialog-message5{
+	display: none;
+	color: darkorange;
+}
+#dialog-message6{
+	display: none;
+	color: darkorange;
+}
 
 @font-face{
 	font-family: NokiaFont;
@@ -14,6 +46,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 /* Foto's responsive maken */
 img {
+	width: 100%;
 	height: auto;
 }
 
@@ -31,6 +64,8 @@ legend {
 /* Basis opmaak pagina */
 h1{
 	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 p{
@@ -42,7 +77,7 @@ p{
 #iphone {
     height: 500px;
     width: 250px;
-  	margin-left: 40%;
+  	margin-left: 43%;
     display: block;
 
     -webkit-animation-duration: 2000ms;
@@ -121,8 +156,6 @@ video#openingsfilm{
     height: 100%;
     width: 100%;
 }
-
-
 
 /* Sections (Pagina's)*/
 #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8{
@@ -241,12 +274,45 @@ video#openingsfilm{
 	background: #ef5423;
 }
 
+.blok {
+	padding-top: 20px;
+	position: relative;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.tijdlijn-text{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 48%;
+	background-color: white;
+	border-radius: 50%;
+	padding: 15px;
+	margin-top: 50px;
+}
+
+.tijdlijn-content{
+	margin-left: 0;
+	width: 45%;
+	background-color: #e7f2f2;
+	padding: 10px;
+}
+
 span.tijdlijn-text {
 	line-height: 40px;
 	text-align: center;
 }
 
-
+.right{
+	position: relative;
+	float: right;
+}
+.left{
+	position: relative;
+	float: left;
+}
 
 .datum1{
 	color: red;
@@ -255,40 +321,37 @@ span.tijdlijn-text {
 	top: 6px;
 }
 
+.readmore{
+	padding: .8em 1em;
+	background: #acb7c0;
+	color: white;
+	border-radius: 0.25em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	display: table;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ef5423;
+}
+.readmore{
+color: white;
+}
 
-.tijdlijn_plaatje{
+
+.timeline a{
+	display: block;
+	padding-bottom: 20px;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.tijdlijn-img {
+	float: left;
 	padding: 10px;
-	max-height: 150px;
+	display: block;
 }
 
 
-
-/** TABELLEN **/
-.tabel-text{
-	padding: 7px;
-}
-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-}
-
-th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
-}
-td, th { 
-  padding: 2px; 
-  text-align: left; 
-}
-
-
-.tijdlijn_foto{
-	width: 90%;
-	height: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
-}
 /** RESPONSIVE **/
 
 
