@@ -355,10 +355,11 @@ color: white;
 	display: block;
 }
 
-#world_chart{
+.chart{
 	width: 60%;
 	height: 60%;
 	margin: auto;
+	float: right;
 }
 
 
