@@ -5,6 +5,10 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 	margin: 0;
 }
 
+div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable{
+	width: 650px !important;
+}
+
 .vis-time-axis .vis-text {
 	color: darkorange !important;
 }
