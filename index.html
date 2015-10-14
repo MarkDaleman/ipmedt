@@ -87,8 +87,13 @@
 		<h1>U heeft een beller!</h1>
 			<audio id="buzzingsound" preload="auto">
 				<source src="sound.mp3"></source>
-			</audio> <!-- Einde audio fragment-->
-			<a href="#section2"><img id="iphone" src="images/nokia.png" alt="nokia"></a>
+			</audio> 
+			<!-- Einde audio fragment-->
+			
+			<audio id="verhaaltje" preload="auto">
+				<source src="verhaal.mp3"></source>
+			</audio>
+			<a href="#3"><img id="iphone" src="images/nokia.png" alt="nokia"></a>
 		</div>
 		
 		<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
@@ -268,27 +273,33 @@
 		</div>
 
 
-		</div><!-- FULLPAGE -->
+		</div>
+		<!-- FULLPAGE -->
 
 		<script>
-		$('#iphone').addClass('animated wobble');
-		</script><!-- Einde animatie -->
-		<script type="text/javascript">
-		window.onload=function(){
-		// collecting elements
-		var buzzingsound = document.getElementById('buzzingsound');
-		var geluid=document.getElementById('iphone');
-		//playing welcome sound on mouse over
-		geluid.onmouseover=function(){
-		buzzingsound.play();
-		};
-		geluid.onclick=function(){
-		buzzingsound.pause();
+			$('#iphone').addClass('animated wobble');
+		</script>
+		<!-- Einde animatie -->
 		
+		<script type="text/javascript">
+			window.onload=function(){
+			// collecting elements
+			var buzzingsound = document.getElementById('buzzingsound');
+			var verhaal = document.getElementById('verhaaltje');
+			var geluid=document.getElementById('iphone');
+			//playing welcome sound on mouse over
+			geluid.onmouseover=function(){
+				buzzingsound.play();
+			};
+			geluid.onclick=function(){
+				buzzingsound.pause();
+				verhaal.play();
+				$('#iphone').removeClass('animated wobble');
+			};
 		};
-
-		};
-		</script> <!-- Einde plaatje link -->
+		</script> 
+		<!-- Einde plaatje link -->
+		
 		<!-- FOOTER -->
 		<footer>
 			<!-- FOOTER CONTENT -->
