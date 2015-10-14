@@ -355,6 +355,12 @@ color: white;
 	display: block;
 }
 
+#world_chart{
+	width: 60%;
+	height: 60%;
+	margin: auto;
+}
+
 
 /** RESPONSIVE **/
 

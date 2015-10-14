@@ -18,19 +18,22 @@
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/angular-mappy.css">
 		
 		<!-- JAVASCRIPT -->
+		<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type ="text/javascript" src="js/abonnementen.js"></script>
 		<script type ="text/javascript" src="js/aansluitingen.js"></script>
 		<script type ="text/javascript" src="js/regio.js"></script>
-		<script type ="text/javascript" src="js/mob_chart.js"></script>
-		<script type ="text/javascript" src="js/pop_chart.js"></script>
-		<script type ="text/javascript" src="js/verbinding_chart.js"></script>
 		<script type ="text/javascript" src="js/chart_main.js"></script>
 
+		<script type ="text/javascript" src="js/angular-mappy.js"></script>
+		<script type ="text/javascript" src="js/_mapdata.js"></script>
+		<script type ="text/javascript" src="js/abbo_data.js"></script>
+		<script type ="text/javascript" src="js/chart_main.js"></script>		
+		
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-		<script type="text/javascript" src="js/Chart.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
 		<script type="text/javascript" src="js/scrolling.js"></script>
 		<script type="text/javascript" src="js/gettijd.js"></script>
@@ -38,7 +41,7 @@
 		<!-- Youtube Api Video's -->
 		<script type="text/javascript" src="js/youtube_1.js"></script>
 		<!--Timeline JS en CSS -->
-		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/vis.js"></script>
 		<link rel="stylesheet" href="css/vis.css">
 		<link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -252,14 +255,18 @@
 		<!-- PAGINA 4 - SLIDES WERELD -->
 		<div class="section" id="section6">
 			<div class="content">
-				<p id="chart_intro"></p>
+				
 				<div class="chart" id="abonnementen_chart"></div>
 				<div class="chart" id="aansluitingen_chart"></div>
 				<div class="chart" id="regio_chart"></div>
-				<div class="chart" id="pop_chart"></div>
-				<div class="chart" id="mob_chart"></div>
-				<div class="chart" id="verbinding_chart"></div>
-		
+
+				<div ng-app="demo" ng-controller="TestController">
+					<div class="chart" id="world_chart" >
+						<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="1205000000" humanize-fn="mapDataHumanizeFn(val)"></mappy>
+					</div>
+				</div>
+				
+				<p id="chart_intro"></p>
 				<ul id="knoppen"> </ul>
 			</div>	
 		</div>
