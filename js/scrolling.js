@@ -5,7 +5,7 @@ $(document).ready(function() {
 		menu: false,
 		lockAnchors: false,
 
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',  '5thpage', '6thpage', '7thpage', '8thpage'],
+		anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage',  '5thPage', '6thPage', '7thPage', '8thPage'],
 
 		menu: '#menu',
 		showActiveTooltip: false,

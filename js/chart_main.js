@@ -16,10 +16,10 @@ function vertel(stap)
 	{
 		$("#chart_intro").html("Maak hieronder een selectie uit verschillende grafieken!");
 	
-		$("#knoppen").append("<li><a href='#' data-stap='2'>Aantal mobiele abonnementen (globaal)</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='3'>Aantal mobiele gebruikers per regio.</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='4'>Groei van aantal aansluitingen</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='5'>Groei van aantal abonnementen</a></li>");
+		$("#knoppen").append("<a href='#' data-stap='2'><li>Aantal mobiele abonnementen wereldwijd</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='3'><li>Globaal % mobiele gebruikers per gebied</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='4'><li>Evolutie van het aantal mobiele verbindingen</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='5'><li>Evolutie van het aantal mobiele abonnementen</li></a>");
 		
 		$("#world_chart").hide();
 		$("#regio_chart").hide();
@@ -29,10 +29,10 @@ function vertel(stap)
 
 	if(stap == 2)
 	{
-		$("#knoppen").append("<li><a href='#' data-stap='2'>Aantal mobiele abonnementen (globaal)</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='3'>Aantal mobiele gebruikers per regio.</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='4'>Groei van aantal aansluitingen</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='5'>Groei van aantal abonnementen</a></li>");
+		$("#knoppen").append("<a href='#' data-stap='2'><li>Aantal mobiele abonnementen wereldwijd</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='3'><li>Globaal % mobiele gebruikers per gebied</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='4'><li>Evolutie van het aantal mobiele verbindingen</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='5'><li>Evolutie van het aantal mobiele abonnementen</li></a>");
 		
 		$("#world_chart").show();
 		$("#regio_chart").hide();
@@ -42,10 +42,10 @@ function vertel(stap)
 
 	if(stap == 3)
 	{
-		$("#knoppen").append("<li><a href='#' data-stap='2'>Aantal mobiele abonnementen (globaal)</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='3'>Aantal mobiele gebruikers per regio.</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='4'>Groei van aantal aansluitingen</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='5'>Groei van aantal abonnementen</a></li>");
+		$("#knoppen").append("<a href='#' data-stap='2'><li>Aantal mobiele abonnementen wereldwijd</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='3'><li>Globaal % mobiele gebruikers per gebied</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='4'><li>Evolutie van het aantal mobiele verbindingen</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='5'><li>Evolutie van het aantal mobiele abonnementen</li></a>");
 		
 		$("#world_chart").hide();
 		$("#regio_chart").show();
@@ -55,10 +55,10 @@ function vertel(stap)
 
 	if(stap == 4)
 	{
-		$("#knoppen").append("<li><a href='#' data-stap='2'>Aantal mobiele abonnementen (globaal)</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='3'>Aantal mobiele gebruikers per regio.</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='4'>Groei van aantal aansluitingen</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='5'>Groei van aantal abonnementen</a></li>");
+		$("#knoppen").append("<a href='#' data-stap='2'><li>Aantal mobiele abonnementen wereldwijd</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='3'><li>Globaal % mobiele gebruikers per gebied</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='4'><li>Evolutie van het aantal mobiele verbindingen</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='5'><li>Evolutie van het aantal mobiele abonnementen</li></a>");
 		
 		$("#world_chart").hide();
 		$("#regio_chart").hide();
@@ -68,10 +68,10 @@ function vertel(stap)
 	
 	if(stap == 5)
 	{
-		$("#knoppen").append("<li><a href='#' data-stap='2'>Aantal mobiele abonnementen (globaal)</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='3'>Aantal mobiele gebruikers per regio.</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='4'>Groei van aantal aansluitingen</a></li>");
-		$("#knoppen").append("<li><a href='#' data-stap='5'>Groei van aantal abonnementen</a></li>");
+		$("#knoppen").append("<a href='#' data-stap='2'><li>Aantal mobiele abonnementen wereldwijd</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='3'><li>Globaal % mobiele gebruikers per gebied</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='4'><li>Evolutie van het aantal mobiele verbindingen</li></a>");
+		$("#knoppen").append("<a href='#' data-stap='5'><li>Evolutie van het aantal mobiele abonnementen</li></a>");
 		
 		$("#world_chart").hide();
 		$("#regio_chart").hide();
