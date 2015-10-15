@@ -18,19 +18,22 @@
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/angular-mappy.css">
 		
 		<!-- JAVASCRIPT -->
+		<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type ="text/javascript" src="js/abonnementen.js"></script>
-		<script type ="text/javascript" src="js/aansluitingen.js"></script>
+		<script type ="text/javascript" src="js/verbindingen.js"></script>
 		<script type ="text/javascript" src="js/regio.js"></script>
-		<script type ="text/javascript" src="js/mob_chart.js"></script>
-		<script type ="text/javascript" src="js/pop_chart.js"></script>
-		<script type ="text/javascript" src="js/verbinding_chart.js"></script>
 		<script type ="text/javascript" src="js/chart_main.js"></script>
 
+		<script type ="text/javascript" src="js/angular-mappy.js"></script>
+		<script type ="text/javascript" src="js/_mapdata.js"></script>
+		<script type ="text/javascript" src="js/abbo_data.js"></script>
+		<script type ="text/javascript" src="js/chart_main.js"></script>		
+		
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-		<script type="text/javascript" src="js/Chart.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
 		<script type="text/javascript" src="js/scrolling.js"></script>
 		<script type="text/javascript" src="js/gettijd.js"></script>
@@ -38,7 +41,7 @@
 		<!-- Youtube Api Video's -->
 		<script type="text/javascript" src="js/youtube_1.js"></script>
 		<!--Timeline JS en CSS -->
-		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/vis.js"></script>
 		<link rel="stylesheet" href="css/vis.css">
 		<link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -55,11 +58,11 @@
 		<!-- MENU -->
 		<div class="nav">
 			<ul id="menu">
-				<li data-menuanchor="firstPage"><a href="#firstPage"><img src="./images/home.png" id="navLogo" /></a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage"><img src="./images/bellen.png" id="navLogo" /></a></li>
+				<li data-menuanchor="1stPage"><a href="#1stPage"><img src="./images/home.png" id="navLogo" /></a></li>
+				<li data-menuanchor="2ndPage"><a href="#2ndPage"><img src="./images/bellen.png" id="navLogo" /></a></li>
 				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenis.png" id="navLogo" /></a></li>
-				<li data-menuanchor="7thPage"><a href="#7thpage"><img src="./images/grafiek.png" id="navLogo" /></a></li>
-				<li data-menuanchor="8thPage"><a href="#8thpage"><img src="./images/bronnen.png" id="navLogo" /></a></li>
+				<li data-menuanchor="4thPage"><a href="#4thPage"><img src="./images/grafiek.png" id="navLogo" /></a></li>
+				<li data-menuanchor="5thPage"><a href="#5thPage"><img src="./images/bronnen.png" id="navLogo" /></a></li>
 				<li class="navOnklikbaar"><p id="navTijd"></p></li>
 				<li class="navOnklikbaar"><img src="./images/synchro.png" id="navLogo" /> <img src="./images/wifi.svg" id="navLogo"/><img src="./images/batterij.svg" id="navLogo" /></li>
 			</ul>
@@ -102,66 +105,189 @@
 			<div id="visualization"></div>
 		<h1>Blader door de geschiedenis om te kijken wanneer wat gebeurde, klik op een icoontje voor meer informatie</h1>
 
-
-			<div id="dialog-message1" title="Telefoon 1">
+			<div class="hidden" id="dialog-message1" title="1973: Mobiel Gesprek">
 				<p>
 					Meer informatie komt hier te staan 1
 				</p>
 				<div id="player"></div>
 			</div>
-			<div id="dialog-message2" title="Telefoon 2">
+			<div class="hidden" id="dialog-message2" title="1979: 1G">
 				<p>
 					Meer informatie komt hier te staan 2
 				</p>
 			</div>
-			<div id="dialog-message3" title="Telefoon 3">
+			<div class="hidden" id="dialog-message3" title="1982: The Senator">
 				<p>
 					Meer informatie komt hier te staan 3
 				</p>
 			</div>
-			<div id="dialog-message4" title="Telefoon 4">
+			<div class="hidden" id="dialog-message4" title="1983: DynaTAC">
 				<p>
 					Meer informatie komt hier te staan 3
 				</p>
 			</div>
-			<div id="dialog-message5" title="Telefoon 5">
+			<div class="hidden" id="dialog-message5" title="1985: Schouder Telefoons">
 				<p>
 					Meer informatie komt hier te staan 3
 				</p>
 			</div>
-			<div id="dialog-message6" title="Telefoon 6">
+			<div class="hidden" id="dialog-message6" title="1989: MicroTAC">
 				<p>
 					Meer informatie komt hier te staan 3
 				</p>
 			</div>
-
+			<div class="hidden" id="dialog-message7" title="1990: 2G">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message8" title="1991: Eerste Simkaart">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message9" title="1992: Nokia 101">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message10" title="1993: IBM Simon">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message11" title="1994: BlueTooth">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message12" title="1994: SMS">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message13" title="1996: Nokia 9000">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message14" title="1999: Nokia 3210">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message15" title="2000: Nokia 3310">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message16" title="2000: Say Cheese">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message17" title="2002: Nokia 6650">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message18" title="2004: RAZR">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message19" title="2007: iRevolution">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message20" title="2008: Apple AppStore">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message21" title="2008: Android Opposition">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			<div class="hidden" id="dialog-message22" title="Google Nexus One">
+				<p>
+					Meer informatie komt hier te staan 3
+				</p>
+			</div>
+			
 			<script type="text/javascript">
 				// DOM element where the Timeline will be attached
 				var container = document.getElementById('visualization');
 
 				// Create a DataSet (allows two way data-binding)
 				var items = new vis.DataSet([
-					{id: 1, content: '<div class="box-1"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1980-04-20'},
+					{id: 1, content: '<div class="box-1"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1973'},
 
-					{id: 2, content: '<div class="box-2"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1990-04-20'},
+					{id: 2, content: '<div class="box-2"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1979'},
 
-					{id: 3, content: '<div class="box-3"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1995-04-14'},
+					{id: 3, content: '<div class="box-3"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1982'},
 
-					{id: 4, content: '<div class="box-4"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2000-04-18'},
+					{id: 4, content: '<div class="box-4"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1983'},
 
-					{id: 5, content: '<div class="box-5"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2006-04-27'},
+					{id: 5, content: '<div class="box-5"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1985'},
 
-					{id: 6, content: '<div class="box-6"><div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2010-04-27'},
+					{id: 6, content: '<div class="box-6"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1989'},
 
-					{id: 7,
-						content: '<div class="item_title">Dogee</div><img src="http://lorempixel.com/40/40"/>',
-						start: '2015-04-27'}
+					{id: 7, content: '<div class="box-7"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1990'},
+					
+					{id: 8, content: '<div class="box-8"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1991'},
+					
+					{id: 9, content: '<div class="box-9"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1992'},
+						
+					{id: 10, content: '<div class="box-10"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1993'},
+						
+					{id: 11, content: '<div class="box-11"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1994'},
+						
+					{id: 12, content: '<div class="box-12"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1994'},
+						
+					{id: 13, content: '<div class="box-13"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1996'},
+						
+					{id: 14, content: '<div class="box-14"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '1999'},
+						
+					{id: 15, content: '<div class="box-15"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2000'},
+						
+					{id: 16, content: '<div class="box-16"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2000'},
+						
+					{id: 17, content: '<div class="box-17"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2002'},
+						
+					{id: 18, content: '<div class="box-18"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2004'},
+						
+					{id: 19, content: '<div class="box-19"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2007'},
+
+					{id: 20, content: '<div class="box-20"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2008'},
+
+					{id: 21, content: '<div class="box-21"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2008'},
+
+					{id: 22, content: '<div class="box-22"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
+						start: '2010'},						
 				]);
 
 				// Configuration for the Timeline
@@ -252,14 +378,17 @@
 		<!-- PAGINA 4 - SLIDES WERELD -->
 		<div class="section" id="section6">
 			<div class="content">
-				<p id="chart_intro"></p>
+				<h1 id="chart_intro"></h1>
 				<div class="chart" id="abonnementen_chart"></div>
 				<div class="chart" id="aansluitingen_chart"></div>
 				<div class="chart" id="regio_chart"></div>
-				<div class="chart" id="pop_chart"></div>
-				<div class="chart" id="mob_chart"></div>
-				<div class="chart" id="verbinding_chart"></div>
-		
+
+				<div ng-app="demo" ng-controller="TestController">
+					<div class="chart" id="world_chart" >
+						<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
+					</div>
+				</div>
+				
 				<ul id="knoppen"> </ul>
 			</div>	
 		</div>

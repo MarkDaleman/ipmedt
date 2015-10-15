@@ -17,29 +17,9 @@ div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-butto
 	color: darkorange;
 }
 
-#dialog-message1{
+.hidden{
 	display: none;
-	color: darkorange;
-}
-#dialog-message2{
-	display: none;
-	color: darkorange;
-}
-#dialog-message3{
-	display: none;
-	color: darkorange;
-}
-#dialog-message4{
-	display: none;
-	color: darkorange;
-}
-#dialog-message5{
-	display: none;
-	color: darkorange;
-}
-#dialog-message6{
-	display: none;
-	color: darkorange;
+	color: darkorange;	
 }
 
 @font-face{
@@ -217,7 +197,7 @@ video#openingsfilm{
     padding: 0;
     margin:0;
     list-style-type: none;
-    background-color: #EE5322;
+    background-color: #00007F;
 }
 #menu{
 	height:65px;
@@ -355,7 +335,42 @@ color: white;
 	display: block;
 }
 
+.chart{
+	width: 65%;
+	height: 65%;
+	margin-top: 2%;
+	margin-right: 5%;
+	float: right;
+}
+#chart_intro{
+	width: 100%;
+	margin: 10px auto 2px auto;
+	display: block;
+}
+#knoppen{
+	width: 20%;
+	height: 400px;
+	margin-left: 5%;
+	float:left;
+	list-style-type: none;
+}
 
+#knoppen>a{
+	display: block;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 1.2em;
+	text-decoration:none;
+	margin-top: 7%;
+	color: rgba(52, 52, 52, 1);
+	background-color: rgba(52, 52, 52, 0.4);
+	height: 22%;
+}
+
+
+
+
+
+font-family: 'Cabin Condensed', sans-serif;
 /** RESPONSIVE **/
 
 
