@@ -148,43 +148,12 @@ video#openingsfilm{
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #adadad;
 }
 
-/* Achtergrond kleuren */
-#section0{
-	background-color: rgba(52, 52, 52, 1.0);
+#section0, #section1{
 	z-index: 2;
 }
-
-#section1{
-	z-index: 2;
-	background-color: rgba(52, 52, 52, 0.9);
-	}
-
-#section2{
-	background-color: rgba(52, 52, 52, 0.8);
-	}
-	
-#section3{
-	background-color: rgba(52, 52, 52, 0.7);
-	}
-	
-#section4{
-	background-color: rgba(52, 52, 52, 0.6);
-	}
-	
-#section5{
-	background-color: rgba(52, 52, 52, 0.5);
-	}
-	
-#section6{
-	background-color: rgba(52, 52, 52, 0.4);
-	}
-	
-#section7{
-	background-color: rgba(52, 52, 52, 0.3);
-	}
-
 
 /* Navigatie */
 .nav{
@@ -198,6 +167,10 @@ video#openingsfilm{
     margin:0;
     list-style-type: none;
     background-color: #00007F;
+	/* border */
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	border-width: 3px;
 }
 #menu{
 	height:65px;
@@ -220,7 +193,6 @@ video#openingsfilm{
     text-align: center;
     text-decoration: none;
     padding: 4px;
-	background-color: #EE5322;
 	font-size: 2em;
 	
 }
