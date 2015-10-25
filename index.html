@@ -42,10 +42,8 @@
 		<!-- Youtube Api Video's -->
 		<script type="text/javascript" src="js/youtube_1.js"></script>
 		<!--Timeline JS en CSS -->
-		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/vis.js"></script>
-		<link rel="stylesheet" href="css/vis.css">
-		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link title="timeline-styles" rel="stylesheet" href="//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+		<script src="//cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
 
 
@@ -108,284 +106,24 @@
 		
 		<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
 		<div class="section" id="section2">
-		<h1>Geschiedenis</h1>
-			<div id="visualization"></div>
-		<h1>Blader door de geschiedenis om te kijken wanneer wat gebeurde, klik op een icoontje voor meer informatie</h1>
-
-			<div class="hidden" id="dialog-message1" title="1973: Mobiel Gesprek">
-				<p>
-					Meer informatie komt hier te staan 1
-				</p>
-				<div id="player"></div>
-			</div>
-			<div class="hidden" id="dialog-message2" title="1979: 1G">
-				<p>
-					Meer informatie komt hier te staan 2
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message3" title="1982: The Senator">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message4" title="1983: DynaTAC">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message5" title="1985: Schouder Telefoons">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message6" title="1989: MicroTAC">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message7" title="1990: 2G">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message8" title="1991: Eerste Simkaart">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message9" title="1992: Nokia 101">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message10" title="1993: IBM Simon">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message11" title="1994: BlueTooth">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message12" title="1994: SMS">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message13" title="1996: Nokia 9000">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message14" title="1999: Nokia 3210">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message15" title="2000: Nokia 3310">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message16" title="2000: Say Cheese">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message17" title="2002: Nokia 6650">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message18" title="2004: RAZR">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message19" title="2007: iRevolution">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message20" title="2008: Apple AppStore">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message21" title="2008: Android Opposition">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			<div class="hidden" id="dialog-message22" title="Google Nexus One">
-				<p>
-					Meer informatie komt hier te staan 3
-				</p>
-			</div>
-			
-			<script type="text/javascript">
-				// DOM element where the Timeline will be attached
-				var container = document.getElementById('visualization');
-
-				// Create a DataSet (allows two way data-binding)
-				var items = new vis.DataSet([
-					{id: 1, content: '<div class="box-1"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1973'},
-
-					{id: 2, content: '<div class="box-2"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1979'},
-
-					{id: 3, content: '<div class="box-3"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1982'},
-
-					{id: 4, content: '<div class="box-4"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1983'},
-
-					{id: 5, content: '<div class="box-5"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1985'},
-
-					{id: 6, content: '<div class="box-6"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1989'},
-
-					{id: 7, content: '<div class="box-7"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1990'},
-					
-					{id: 8, content: '<div class="box-8"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1991'},
-					
-					{id: 9, content: '<div class="box-9"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1992'},
-						
-					{id: 10, content: '<div class="box-10"><div class="item_title">Mobiel</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1993'},
-						
-					{id: 11, content: '<div class="box-11"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1994'},
-						
-					{id: 12, content: '<div class="box-12"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1994'},
-						
-					{id: 13, content: '<div class="box-13"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1996'},
-						
-					{id: 14, content: '<div class="box-14"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '1999'},
-						
-					{id: 15, content: '<div class="box-15"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2000'},
-						
-					{id: 16, content: '<div class="box-16"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2000'},
-						
-					{id: 17, content: '<div class="box-17"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2002'},
-						
-					{id: 18, content: '<div class="box-18"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2004'},
-						
-					{id: 19, content: '<div class="box-19"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2007'},
-
-					{id: 20, content: '<div class="box-20"><div class="item_title">Event</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2008'},
-
-					{id: 21, content: '<div class="box-21"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2008'},
-
-					{id: 22, content: '<div class="box-22"><div class="item_title">Mobile</div><img src="http://lorempixel.com/40/40"/></div>',
-						start: '2010'},						
-				]);
-
-				// Configuration for the Timeline
-				var options = {};
-
-				// Create a Timeline
-				var timeline = new vis.Timeline(container, items, options);
-
-
-				$(document).ready(function(){
-					$(".box-1").click(function(){
-						$(function() {
-							$( "#dialog-message1" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-					$(".box-2").click(function(){
-						$(function() {
-							$( "#dialog-message2" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-					$(".box-3").click(function(){
-						$(function() {
-							$( "#dialog-message3" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-					$(".box-4").click(function(){
-						$(function() {
-							$( "#dialog-message4" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-					$(".box-5").click(function(){
-						$(function() {
-							$( "#dialog-message5" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-					$(".box-6").click(function(){
-						$(function() {
-							$( "#dialog-message6" ).dialog({
-								modal: true,
-								buttons: {
-									Ok: function() {
-										$( this ).dialog( "close" );
-									}
-								}
-							});
-						});
-					});
-				});
-			</script>
 			<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
-			<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
+			<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>	
+			
+			<div id='timeline-embed' style="width: 100%; height: 600px; "></div>
+		
+			<script type="text/javascript">
+				var options = {
+					timenav_height_percentage: 10,
+					is_embed: true
+				}
+				timeline = new TL.Timeline('timeline-embed',
+				'https://docs.google.com/spreadsheets/d/1xDms3BhltQlMtiJRXYPOu5gi3hQpsCCmhd5yxh1cBRo/pubhtml', options);
+			</script>
 		</div>
 
-		
+
 		<!-- PAGINA 4 - SLIDES WERELD -->
-		<div class="section" id="section6">
+		<div class="section" id="section3">
 			<div class="content">
 				<h1 id="chart_intro"></h1>
 				<div class="chart" id="abonnementen_chart"></div>
@@ -406,7 +144,7 @@
 		</div>
 			
 		<!-- PAGINA 5 - BRONNENLIJST -->
-		<div class="section" id="section7">
+		<div class="section" id="section4">
 			<h1>Bronnenlijst</h1>
 			<div class="content">
 				<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
