@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/angular-mappy.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
 		<!-- JAVASCRIPT -->
 		<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
@@ -58,13 +59,15 @@
 		<!-- MENU -->
 		<div class="nav">
 			<ul id="menu">
-				<li data-menuanchor="1stPage"><a href="#1stPage"><img src="./images/home.png" id="navLogo" /></a></li>
-				<li data-menuanchor="2ndPage"><a href="#2ndPage"><img src="./images/bellen.png" id="navLogo" /></a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenis.png" id="navLogo" /></a></li>
-				<li data-menuanchor="4thPage"><a href="#4thPage"><img src="./images/grafiek.png" id="navLogo" /></a></li>
-				<li data-menuanchor="5thPage"><a href="#5thPage"><img src="./images/bronnen.png" id="navLogo" /></a></li>
+				<li data-menuanchor="1stPage"><a href="#1stPage"><img src="./images/homeWit.png" id="navLogo" /></a></li>
+				<li data-menuanchor="2ndPage"><a href="#2ndPage"><img src="./images/bellenWit.png" id="navLogo" /></a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenisWit.png" id="navLogo" /></a></li>
+				<li data-menuanchor="4thPage"><a href="#4thPage"><img src="./images/grafiekWit.png" id="navLogo" /></a></li>
+				<li data-menuanchor="5thPage"><a href="#5thPage"><img src="./images/bronnenWit.png" id="navLogo" /></a></li>
 				<li class="navOnklikbaar"><p id="navTijd"></p></li>
-				<li class="navOnklikbaar"><img src="./images/synchro.png" id="navLogo" /> <img src="./images/wifi.svg" id="navLogo"/><img src="./images/batterij.svg" id="navLogo" /></li>
+				<li class="navOnklikbaar"><span class="fa fa-battery-three-quarters fa-3x fa-color-white" /></li>
+				<li class="navOnklikbaar"><span class="fa fa-spinner fa-spin fa-3x fa-color-white" /></li>
+				<li class="navOnklikbaar"><span class="fa fa-wifi fa-3x fa-color-white" /></li>
 			</ul>
 		</ul>
 	</div>
@@ -79,10 +82,11 @@
 		<div class="section" id="section0">
 			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
 			<br>
-			<a href="#2" class="button-red animated pulse">Ga verder!</a>
 			<video autoplay loop muted id="bgvid">
 				<source src="landingsfilm.mp4" type="video/mp4">
 			</video>
+			
+			<a href="#2"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
 		</div>
 		
 		<!-- PAGINA 2 - BELLER-->
@@ -97,6 +101,9 @@
 				<source src="verhaal.mp3"></source>
 			</audio>
 			<a href="#3"><img id="iphone" src="images/nokia.png" alt="nokia"></a>
+			
+			<a href="#1"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
+			<a href="#3"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
 		</div>
 		
 		<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
@@ -372,6 +379,8 @@
 					});
 				});
 			</script>
+			<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
+			<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
 		</div>
 
 		
@@ -391,14 +400,18 @@
 				
 				<ul id="knoppen"> </ul>
 			</div>	
+			
+			<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
+			<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
 		</div>
 			
 		<!-- PAGINA 5 - BRONNENLIJST -->
 		<div class="section" id="section7">
-		<h1>Bronnenlijst</h1>
+			<h1>Bronnenlijst</h1>
 			<div class="content">
 				<p> Bla bla bronnen, kijken hoe we dit mooi kunnen maken</p>
 			</div>
+			<a href="#4"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
 		</div>
 
 
