@@ -229,6 +229,7 @@ video#openingsfilm{
 .knopBoven, .knopBeneden{
 	position: absolute;
 	right: 3%;
+	color: #00007F;
 }
 
 .knopBoven{
@@ -362,32 +363,54 @@ color: white;
 	border-radius: 15px;
 }
 
-
-
-
+.bronVermelding{
+	border-radius: 15px;
+	float: left;
+	margin: 0 4% 1% 4%;
+	width: 40%;
+	background-color: rgba(52, 52, 52, 0.4);
+	padding-left: 1%;
+}
 
 font-family: 'Cabin Condensed', sans-serif;
 /** RESPONSIVE **/
 
 
   /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .bigasstitle {
-    	font-size: 50px;
+@media only screen and (max-width: 768px) {	
+	.bigasstitle{
+		font-size: 50px;
 	}
 	#iphone {
     	margin-left: 30%;
     }
-}
+	
+	#navLogo, .fa-color-white{
+	color: white;
+	height: 30px;
+	width: auto;
+	vertical-align: middle;
+	margin-bottom: 8px;
+	}
 
-    /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+	#navLogo{
+		margin-right: 10px;
+	}
 
-}
+	.fa-color-white{
+		margin-right: 5px;
+	}
 
-    /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+	#navTijd{
+		font-size: 1em;
+		z-index: 100;
+		color: #fff;
+	}
 
+	.navOnklikbaar{
+		float: right !important;
+		margin-right: 10px !important;
+	}
 }
 
 
