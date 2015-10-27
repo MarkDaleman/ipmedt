@@ -24,20 +24,21 @@
 		<!-- JAVASCRIPT -->
 		<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type ="text/javascript" src="js/chart_main.js"></script>
 		<script type ="text/javascript" src="js/abonnementen.js"></script>
 		<script type ="text/javascript" src="js/verbindingen.js"></script>
 		<script type ="text/javascript" src="js/regio.js"></script>
-		<script type ="text/javascript" src="js/chart_main.js"></script>
 
 		<script type ="text/javascript" src="js/angular-mappy.js"></script>
 		<script type ="text/javascript" src="js/_mapdata.js"></script>
-		<script type ="text/javascript" src="js/abbo_data.js"></script>
-		<script type ="text/javascript" src="js/chart_main.js"></script>		
+		<script type ="text/javascript" src="js/abbo_data.js"></script>		
 		
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
 		<script type="text/javascript" src="js/scrolling.js"></script>
 		<script type="text/javascript" src="js/gettijd.js"></script>
+		
+		<script type="text/javascript" src="js/pulldown_data.js"></script>
 
 		<!-- Youtube Api Video's -->
 		<script type="text/javascript" src="js/youtube_1.js"></script>
@@ -137,8 +138,46 @@
 				</div>
 				
 				<ul id="knoppen"> </ul>
-			</div>	
+			</div>
 			
+			<h1 id="form_titel">Geografische informatie!</h1>
+			<form id="small_form" action="#" method="post">
+				<div id="keuze1">
+					<label id="opties_label" for="opties">Maak een keuze: </label>
+					<select id="opties" onchange="selection(this);">
+						<option selected="true" style="display:none;">--SELECT--</option>
+						<option value="Globaal">Globaal</option>
+						<option value="Europa">Europa</option>
+						<option value="Azie">Azië</option>
+						<option value="N-Amerika">Noord Amerika</option>
+						<option value="Z-Amerika">Zuid Amerika</option>
+						<option value="Afrika">Afrika</option>
+						<option value="Oceanie">Oceanië</option>
+					</select>
+				</div>
+				<div id="keuze2" style="display:none;">
+					<div id="mob_globaal"> </div>
+				</div>
+				<div id="keuze3" style="display:none;">
+					<div id="mob_europa"> </div>
+				</div>
+				<div id="keuze4" style="display:none;">
+					<div id="mob_azie"> </div>				
+				</div>
+				<div id="keuze5" style="display:none;">
+					<div id="mob_n_amerika"> </div>
+				</div>
+				<div id="keuze6" style="display:none;">
+					<div id="mob_z_amerika"> </div>
+				</div>
+				<div id="keuze7" style="display:none;">
+					<div id="mob_afrika"> </div>
+				</div>
+				<div id="keuze8" style="display:none;">
+					<div id="mob_oceanie"> </div>
+				</div>
+			</form>
+
 			<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
 			<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
 		</div>
