@@ -223,6 +223,7 @@ video#bgvid {
 .knopBoven, .knopBeneden{
 	position: absolute;
 	right: 3%;
+	color: #00007F;
 }
 
 .knopBoven{
@@ -268,6 +269,16 @@ video#bgvid {
 	border-radius: 15px;
 }
 
+<<<<<<< HEAD
+.bronVermelding{
+	border-radius: 15px;
+	float: left;
+	margin: 0 4% 1% 4%;
+	width: 40%;
+	background-color: rgba(52, 52, 52, 0.4);
+	padding-left: 1%;
+}
+=======
 /* TABEL */
 #keuze1{
 	width: 80%;
@@ -313,17 +324,24 @@ table th, table td
 
 	
 
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
+
+font-family: 'Cabin Condensed', sans-serif;
+>>>>>>> 079455f56c33e16095b0de52fad59e268cc3c649
 /** RESPONSIVE **/
 
 
   /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .bigasstitle {
-    	font-size: 50px;
+@media only screen and (max-width: 768px) {	
+	.bigasstitle{
+		font-size: 50px;
 	}
 	#iphone {
     	margin-left: 30%;
     }
+<<<<<<< HEAD
     .navOnklikbaar{
    max-height: 23px !important;
     }
@@ -335,16 +353,35 @@ table th, table td
 	.tabelimage img{
 		width: 100px !important;
 
+=======
+	
+	#navLogo, .fa-color-white{
+	color: white;
+	height: 30px;
+	width: auto;
+	vertical-align: middle;
+	margin-bottom: 8px;
+>>>>>>> 079455f56c33e16095b0de52fad59e268cc3c649
 	}
 
-    /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+	#navLogo{
+		margin-right: 10px;
+	}
 
-}
+	.fa-color-white{
+		margin-right: 5px;
+	}
 
-    /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+	#navTijd{
+		font-size: 1em;
+		z-index: 100;
+		color: #fff;
+	}
 
+	.navOnklikbaar{
+		float: right !important;
+		margin-right: 10px !important;
+	}
 }
 
 
