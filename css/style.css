@@ -9,6 +9,26 @@ div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-butto
 	width: 650px !important;
 }
 
+/** INTRO TABEL */
+
+span.underline{
+	text-decoration: underline;
+	color: red;
+}
+.tabelintro{
+	border: none;
+}
+.tabelimage{
+	max-width: 200px;
+	max-height: auto;
+	width: 33%;
+}
+.tabeltext{
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	padding-top: 10px;
+}
 
 .item_title{
 	color: darkorange;
@@ -24,12 +44,6 @@ div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-butto
 	src: url(./fonts/nokiafc22.ttf);
 }
 
-
-/* Foto's responsive maken */
-img {
-	width: 100%;
-	height: auto;
-}
 
 
 /* Lettertypen */
@@ -60,12 +74,10 @@ p{
     width: 250px;
   	margin-left: 43%;
     display: block;
-
     -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
 	-moz-animation-duration: 2000ms;
 	-moz-animation-iteration-count: infinite;
-
 }
 
 /* Grote rode knop en titel*/
@@ -120,23 +132,8 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
-video#openingsfilm{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-}
 
-#openingsfilm{
-    height: 100%;
-    width: 100%;
-}
+
 
 /* Sections (Pagina's)*/
 #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8{
@@ -325,10 +322,7 @@ table th, table td
 	border-color: #ccc;
 }
 
-
->>>>>>> refs/remotes/origin/master
-
-font-family: 'Cabin Condensed', sans-serif;
+	
 /** RESPONSIVE **/
 
 
@@ -340,13 +334,26 @@ font-family: 'Cabin Condensed', sans-serif;
 	#iphone {
     	margin-left: 30%;
     }
-	
+
+    .navOnklikbaar{
+   max-height: 23px !important;
+    }
+
+    #navLogo {
+    max-height: 23px !important;
+	}
+
+	.tabelimage img{
+		width: 100px !important;
+
+	}
 	#navLogo, .fa-color-white{
 	color: white;
 	height: 30px;
 	width: auto;
 	vertical-align: middle;
 	margin-bottom: 8px;
+
 	}
 
 	#navLogo{

@@ -41,15 +41,9 @@
 		
 		<script type="text/javascript" src="js/pulldown_data.js"></script>
 
-		<!-- Youtube Api Video's -->
-		<script type="text/javascript" src="js/youtube_1.js"></script>
 		<!--Timeline JS en CSS -->
 		<link title="timeline-styles" rel="stylesheet" href="//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 		<script src="//cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-
-
-
-
 
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
@@ -59,11 +53,11 @@
 		<!-- MENU -->
 		<div class="nav">
 			<ul id="menu">
-				<li data-menuanchor="1stPage"><a href="#1stPage"><img src="./images/homeWit.png" id="navLogo" /></a></li>
-				<li data-menuanchor="2ndPage"><a href="#2ndPage"><img src="./images/bellenWit.png" id="navLogo" /></a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenisWit.png" id="navLogo" /></a></li>
-				<li data-menuanchor="4thPage"><a href="#4thPage"><img src="./images/grafiekWit.png" id="navLogo" /></a></li>
-				<li data-menuanchor="5thPage"><a href="#5thPage"><img src="./images/bronnenWit.png" id="navLogo" /></a></li>
+				<li data-menuanchor="1stPage"><a href="#1stPage"><img src="./images/homeWit.png" id="navLogo" alt="home" /></a></li>
+				<li data-menuanchor="2ndPage"><a href="#2ndPage"><img src="./images/bellenWit.png" id="navLogo" alt="bellen"/></a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="./images/geschiedenisWit.png" id="navLogo" alt="geschiedenis"/></a></li>
+				<li data-menuanchor="4thPage"><a href="#4thPage"><img src="./images/grafiekWit.png" id="navLogo" alt="grafiek"/></a></li>
+				<li data-menuanchor="5thPage"><a href="#5thPage"><img src="./images/bronnenWit.png" id="navLogo" alt="bronnen"/></a></li>
 				<li class="navOnklikbaar"><p id="navTijd"></p></li>
 				<li class="navOnklikbaar"><span class="fa fa-battery-three-quarters fa-3x fa-color-white" /></li>
 				<li class="navOnklikbaar"><span class="fa fa-spinner fa-spin fa-3x fa-color-white" /></li>
@@ -71,20 +65,29 @@
 			</ul>
 		</ul>
 	</div>
+
 	<div id="openingsfilm">
-		<video autoplay loop muted id="bgvid">
-			<source src="openingsfilm.webm" type="video/webm">
-			<source src="openingsfilm.mp4" type="video/mp4">
-		</video>
+		<table class="tabelintro" style="width:100%">
+  <tr>
+    <td class="tabelimage" style="text-align: center;"><img src="images/scroll.png"  alt="scroll png"></td>
+    <td class="tabelimage" style="text-align: center;"><img src="images/buttons.png" alt="buttons png"></td> 
+    <td class="tabelimage" style="text-align: center;"><img src="images/koptelefoon.png" alt="koptelefoon png"></td>
+  </tr>
+  <tr>
+    <td class="tabeltext">Staat je geluid aan ? Zo niet zet het aan!</td>
+    <td class="tabeltext">Gebruik je pijltjestoetsen om over de site te navigeren</td> 
+    <td class="tabeltext">Gebruik anders het scrollwheel of je vinger als je een touchscreen hebt</td>
+  </tr>
+</table>
+<h2 class="tabeltext"> Klik <span class="underline">hier</span> om verder te gaan! <h2>
 	</div>
+	
 	<div id="fullpage">	
 		<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
 		<div class="section" id="section0">
 			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
 			<br>
-			<video autoplay loop muted id="bgvid">
-				<source src="landingsfilm.mp4" type="video/mp4">
-			</video>
+
 			
 			<a href="#2"><span class="fa fa-arrow-circle-o-down fa-5x knopBeneden" /></a>
 		</div>
