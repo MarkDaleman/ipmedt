@@ -323,13 +323,6 @@ table th, table td
 }
 
 	
-
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/master
-
-font-family: 'Cabin Condensed', sans-serif;
->>>>>>> 079455f56c33e16095b0de52fad59e268cc3c649
 /** RESPONSIVE **/
 
 
@@ -341,7 +334,7 @@ font-family: 'Cabin Condensed', sans-serif;
 	#iphone {
     	margin-left: 30%;
     }
-<<<<<<< HEAD
+
     .navOnklikbaar{
    max-height: 23px !important;
     }
@@ -353,15 +346,14 @@ font-family: 'Cabin Condensed', sans-serif;
 	.tabelimage img{
 		width: 100px !important;
 
-=======
-	
+	}
 	#navLogo, .fa-color-white{
 	color: white;
 	height: 30px;
 	width: auto;
 	vertical-align: middle;
 	margin-bottom: 8px;
->>>>>>> 079455f56c33e16095b0de52fad59e268cc3c649
+
 	}
 
 	#navLogo{
