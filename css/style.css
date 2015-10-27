@@ -322,6 +322,14 @@ table th, table td
 	border-color: #ccc;
 }
 
+.bronVermelding{
+	border-radius: 15px;
+	float: left;
+	margin: 0 4% 1% 4%;
+	width: 40%;
+	background-color: rgba(52, 52, 52, 0.4);
+	padding-left: 1%;
+}
 	
 /** RESPONSIVE **/
 
@@ -331,32 +339,25 @@ table th, table td
 	.bigasstitle{
 		font-size: 50px;
 	}
+	
 	#iphone {
     	margin-left: 30%;
     }
-
-    .navOnklikbaar{
-   max-height: 23px !important;
-    }
-
+	
     #navLogo {
     max-height: 23px !important;
 	}
 
 	.tabelimage img{
 		width: 100px !important;
-
 	}
+	
 	#navLogo, .fa-color-white{
-	color: white;
-	height: 30px;
-	width: auto;
-	vertical-align: middle;
-	margin-bottom: 8px;
-
-	}
-
-	#navLogo{
+		color: white;
+		height: 40px;
+		width: auto;
+		vertical-align: middle;
+		margin-bottom: 8px;
 		margin-right: 10px;
 	}
 
@@ -371,9 +372,17 @@ table th, table td
 	}
 
 	.navOnklikbaar{
-		float: right !important;
-		margin-right: 10px !important;
+		visibility: hidden;
 	}
+	
+	.bronVermelding{
+	border-radius: 15px;
+	float: left;
+	margin: 0 4% 1% 4%;
+	width: 80%;
+	background-color: rgba(52, 52, 52, 0.4);
+	padding-left: 1%;
+}
 }
 
 
