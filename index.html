@@ -63,32 +63,33 @@
 				<li class="navOnklikbaar"><span class="fa fa-spinner fa-spin fa-3x fa-color-white" /></li>
 				<li class="navOnklikbaar"><span class="fa fa-wifi fa-3x fa-color-white" /></li>
 			</ul>
-		</ul>
-	</div>
+		</div>
 
-	<div id="openingsfilm">
-		<table class="tabelintro" style="width:100%">
-  <tr>
-    <td class="tabelimage" style="text-align: center;"><img src="images/scroll.png"  alt="scroll png"></td>
-    <td class="tabelimage" style="text-align: center;"><img src="images/buttons.png" alt="buttons png"></td> 
-    <td class="tabelimage" style="text-align: center;"><img src="images/koptelefoon.png" alt="koptelefoon png"></td>
-  </tr>
-  <tr>
-    <td class="tabeltext">Staat je geluid aan ? Zo niet zet het aan!</td>
-    <td class="tabeltext">Gebruik je pijltjestoetsen om over de site te navigeren</td> 
-    <td class="tabeltext">Gebruik anders het scrollwheel of je vinger als je een touchscreen hebt</td>
-  </tr>
-</table>
-<h2 class="tabeltext"> Klik <span class="underline">hier</span> om verder te gaan! <h2>
-	</div>
+		<div id="openingsfilm">
+			<table class="tabelintro" style="width:100%">
+			  <tr>
+				<td class="tabelimage" style="text-align: center;"><img src="images/buttons.png" alt="buttons png"></td> 
+				<td class="tabelimage" style="text-align: center;"><img src="images/scroll.png"  alt="scroll png"></td>
+				<td class="tabelimage" style="text-align: center;"><img src="images/koptelefoon.png" alt="koptelefoon png"></td>
+			  </tr>
+			  <tr>
+				<td class="tabeltext">Gebruik je pijltjestoetsen om over de site te navigeren</td> 
+				<td class="tabeltext">Gebruik anders het scrollwheel of je vinger als je een touchscreen hebt</td>
+				<td class="tabeltext">Staat je geluid aan? Zo niet zet het aan!</td>
+			  </tr>
+			</table>
+			<h2 class="tabeltext"> Klik <span class="underline">hier</span> om verder te gaan! <h2>
+		</div>
 	
-	<div id="fullpage">	
+		<div id="fullpage">
+
 		<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
 		<div class="section" id="section0">
+			<video autoplay loop muted id="bgvid">
+				<source src="landingsfilm.mp4" type="video/mp4">
+			</video>	
 			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
 			<br>
-
-			
 			<a href="#2"><span class="fa fa-arrow-circle-o-down fa-5x knopBeneden" /></a>
 		</div>
 		
@@ -103,7 +104,7 @@
 			<audio id="verhaaltje" preload="auto">
 				<source src="verhaal.mp3"></source>
 			</audio>
-			<a href="#3"><img id="iphone" src="images/nokia.png" alt="nokia"></a>
+			<img id="iphone" src="images/nokia.png" alt="nokia">
 			
 			<a href="#1"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
 			<a href="#3"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
@@ -294,16 +295,25 @@
 			// collecting elements
 			var buzzingsound = document.getElementById('buzzingsound');
 			var verhaal = document.getElementById('verhaaltje');
-			var geluid=document.getElementById('iphone');
+			var telefoon = document.getElementById('iphone');
+			var teller = 0;
+			
 			//playing welcome sound on mouse over
-			geluid.onmouseover=function(){
-				buzzingsound.play();
-			};
-			geluid.onclick=function(){
-				buzzingsound.pause();
-				verhaal.play();
-				$('#iphone').removeClass('animated wobble');
-			};
+			if(teller === 0){
+				telefoon.onmouseover = function(){
+					buzzingsound.play();
+				};
+			
+				telefoon.onclick=function(){
+					buzzingsound.pause();
+					$('#iphone').removeClass('animated wobble');
+				};
+				
+				buzzingsound.onpause=function(){
+					verhaal.play();
+					teller = 1;
+				};
+			}
 		};
 		</script> 
 		<!-- Einde plaatje link -->
