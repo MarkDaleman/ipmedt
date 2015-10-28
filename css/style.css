@@ -44,13 +44,10 @@ span.underline{
 	src: url(./fonts/nokiafc22.ttf);
 }
 
-
-
 /* Lettertypen */
 p, h1, h2, h3, fieldset, #navTijd{
 	font-family: 'Cabin Condensed', sans-serif;
 }
-
 
 legend {
 	font-weight: bold;
@@ -69,7 +66,7 @@ p{
 }
 
 /* grote telefoon */
-#iphone {
+#iphone{
     height: 500px;
     width: 250px;
   	margin-left: 43%;
@@ -118,7 +115,7 @@ p{
 }
 
 /* Video player */
-video#bgvid {
+video#bgvid{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -132,8 +129,6 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
 }
-
-
 
 /* Sections (Pagina's)*/
 #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8{
@@ -166,6 +161,7 @@ video#bgvid {
 	border-bottom-color: #000;
 	border-width: 3px;
 }
+
 #menu{
 	height:65px;
 }
@@ -178,12 +174,12 @@ video#bgvid {
 	margin: 0% 1%;
 }
 
-#menu a {
+#menu a{
 	font-size: 2em;
 	color: #000;
 }
 
-#menu a:link, a:visited {
+#menu a:link, a:visited{
     text-align: center;
     text-decoration: none;
     padding: 4px;
@@ -223,16 +219,20 @@ video#bgvid {
 .tl-timeline{
 	font-family: 'Cabin Condensed', sans-serif !important;	
 }
+
 .tl-media-content >img{
 	max-height: 350px !important;
 }
+
 .tl-caption{
 	text-align:center !important;
 }
+
 .tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title{
 	color: #FFFFFF !important;
 	opacity: 100 !important;
 }
+
 .tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
     font-size: 12px !important;
     opacity: 100 !important;
@@ -261,6 +261,7 @@ video#bgvid {
 	margin: 5% 3% 5% 0%;
 	float: right;
 }
+
 #world_chart{
 	width: 65% !important;
 	margin: 0% 7% 0% 0% !important;
@@ -271,6 +272,7 @@ video#bgvid {
 	margin: 10px auto 2px auto;
 	display: block;
 }
+
 #knoppen{
 	width: 20%;
 	min-height: 250px;
@@ -313,28 +315,27 @@ video#bgvid {
 	margin-right:1%;
 	text-align:center;
 }
+
 #opties{
 	width: 80%;
 	margin: auto;
 }
 
-
-table
-{
+table{
 	width: 80%;
 	margin: auto;
 	border: 1px solid #ccc;
 	border-collapse: collapse;
 }
-table th
-{
+
+table th{
 	font-size: 12pt;
 	background-color: #00007F;
 	color: #FFFFFF;
 	font-weight: bold;
 }
-table th, table td
-{
+
+table th, table td{
 	font-family: 'Cabin Condensed', sans-serif;
 	padding: 5px;
 	border-color: #ccc;
@@ -350,19 +351,17 @@ table th, table td
 }
 	
 /** RESPONSIVE **/
-
-
   /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {	
+@media only screen and (max-width: 768px){	
 	.bigasstitle{
 		font-size: 50px;
 	}
 	
-	#iphone {
+	#iphone{
     	margin-left: 30%;
     }
 	
-    .navLogo {
+    .navLogo{
     max-height: 23px !important;
 	}
 
@@ -400,7 +399,7 @@ table th, table td
 	width: 80%;
 	background-color: rgba(52, 52, 52, 0.4);
 	padding-left: 1%;
-}
+	}
 }
 
 
