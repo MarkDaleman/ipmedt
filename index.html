@@ -27,17 +27,15 @@
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type ="text/javascript" src="js/chart_main.js"></script>
 		<script type ="text/javascript" src="js/google_charts.js"></script>
-
-
 		<script type ="text/javascript" src="js/angular-mappy.js"></script>
 		<script type ="text/javascript" src="js/_mapdata.js"></script>
 		<script type ="text/javascript" src="js/abbo_data.js"></script>		
 		
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/showfrontpage.js"></script>
+		
 		<script type="text/javascript" src="js/scrolling.js"></script>
 		<script type="text/javascript" src="js/gettijd.js"></script>
-		
 		<script type="text/javascript" src="js/pulldown_data.js"></script>
 
 		<!--Timeline JS en CSS -->
@@ -47,6 +45,7 @@
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
 	</head>
+	
 	<body>
 		<!-- PAGINA CONTENT -->
 		<!-- MENU -->
@@ -81,240 +80,242 @@
 		</div>
 	
 		<div id="fullpage">
-
-		<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
-		<div class="section" id="section0">
-			<video autoplay loop muted id="bgvid">
-				<source src="landingsfilm.mp4" type="video/mp4">
-			</video>	
-			<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
-			<br>
-			<a href="#2"><span class="fa fa-arrow-circle-o-down fa-5x knopBeneden"></span></a>
-		</div>
-		
-		<!-- PAGINA 2 - BELLER-->
-		<div class="section" id="section1">
-		<h1>U heeft een beller!</h1>
-			<audio id="buzzingsound" preload="auto">
-				<source src="sound.mp3">
-			</audio> 
-			<!-- Einde audio fragment-->
-			
-			<audio id="verhaaltje" preload="auto">
-				<source src="verhaal.mp3">
-			</audio>
-			<img id="iphone" src="images/nokia.png" alt="nokia">
-			
-			<a href="#1"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
-			<a href="#3"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>
-		</div>
-		
-<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
-<div class="section" id="section2">
-	<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
-	<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>	
-	
-	<div id='timeline-embed' style="width: 100%; height: 600px; "></div>
-
-	<script type="text/javascript">
-		var options = {
-			height:10,
-			timenav_height_percentage: 25,
-			timenav_height_min: 80,
-			timenav_position: "top",
-			skinny_size: 20
-		}
-		timeline = new TL.Timeline('timeline-embed',
-		'https://docs.google.com/spreadsheets/d/1xDms3BhltQlMtiJRXYPOu5gi3hQpsCCmhd5yxh1cBRo/pubhtml', options);
-	</script>
-</div>
-
-
-		<!-- PAGINA 4 - SLIDES WERELD -->
-<div class="section" id="section3">
-	<div class="content">
-		<h1 id="chart_intro"></h1>
-		<div class="chart" id="abonnementen_chart" ></div>
-		<div class="chart" id="aansluitingen_chart"></div>
-		<div class="chart" id="regio_chart"></div>
-		<div data-ng-app="demo" data-ng-controller="TestController">
-			<div class="chart" id="world_chart" >
-				<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
+			<!-- PAGINA 1 - VOORPAGINA / LANDINGSPAGE -->
+			<div class="section" id="section0">
+				<video autoplay loop muted id="bgvid">
+					<source src="landingsfilm.mp4" type="video/mp4">
+				</video>	
+				<h1 class="bigasstitle">De opkomst van de mobiele telefoon</h1>
+				<br>
+				<a href="#2"><span class="fa fa-arrow-circle-o-down fa-5x knopBeneden"></span></a>
 			</div>
-		</div>	
-		<ul id="knoppen"> </ul>
-	</div>
-	
-	<h1 id="form_titel">Interessante weetjes!</h1>
-	<form id="small_form" action="#" method="post">
-		<div id="keuze1">
-			<label id="opties_label" for="opties">Globale cijfers over mobiele telefonie</label>
-			<select id="opties" onchange="selection(this);">
-				<option value="" disabled selected>Maak uw keuze</option>
-				<option value="Globaal">Globaal</option>
-				<option value="Europa">Europa</option>
-				<option value="Azie">Azië</option>
-				<option value="N-Amerika">Noord Amerika</option>
-				<option value="Z-Amerika">Zuid Amerika</option>
-				<option value="Afrika">Afrika</option>
-				<option value="Oceanie">Oceanië</option>
-			</select>
-		</div>
-		<div id="keuze2" style="display:none;">
-			<div id="mob_globaal"> </div>
-		</div>
-		<div id="keuze3" style="display:none;">
-			<div id="mob_europa"> </div>
-		</div>
-		<div id="keuze4" style="display:none;">
-			<div id="mob_azie"> </div>				
-		</div>
-		<div id="keuze5" style="display:none;">
-			<div id="mob_n_amerika"> </div>
-		</div>
-		<div id="keuze6" style="display:none;">
-			<div id="mob_z_amerika"> </div>
-		</div>
-		<div id="keuze7" style="display:none;">
-			<div id="mob_afrika"> </div>
-		</div>
-		<div id="keuze8" style="display:none;">
-			<div id="mob_oceanie"> </div>
-		</div>
-	</form>
-
-	<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
-	<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
-</div>
 			
-		<!-- PAGINA 5 - BRONNENLIJST -->
-		<div class="section" id="section4">
-			<h1>Bronnenlijst</h1>
-			<p class=bronVermelding>
-				Angular Mappy by Matt Osborn<br>
-				https://github.com/mattosborn/angular-mappy
-			</p>
-			<p class=bronVermelding>
-				fullPage ny Alvaro Trigo<br>
-				https://github.com/alvarotrigo/fullPage.js
-			</p>
-			<p class=bronVermelding>
-				The Awesome Font by Dave Gandy<br>
-				https://fortawesome.github.io/Font-Awesome/
-			</p>
-			<p class=bronVermelding>
-				TimeLiner by Tarek Anandan<br>
-				http://www.technotarek.com/
-			</p>
-			<p class=bronVermelding>
-				Animate by Daniel Eden<br>
-				http://daneden.me/animate
-			</p>
-			<p class=bronVermelding>
-				Martin Cooper by Rico Shen<br>
-				https://upload.wikimedia.org/wikipedia/commons/1/1f/2007Computex_e21Forum-MartinCooper.jpg
-			</p>
-			<p class=bronVermelding>
-				Nokia Talkman by Krystof.k<br>
-				https://upload.wikimedia.org/wikipedia/commons/7/7f/Nokia_Talkman_%28right%29.jpg
-			</p>
-			<p class=bronVermelding>
-				Motorola DynaTAC by Redrum0486<br>
-				https://upload.wikimedia.org/wikipedia/commons/7/74/DynaTAC8000X.jpg
-			</p>
-			<p class=bronVermelding>
-				Motorola MicroTAC by Redrum0486<br>
-				https://upload.wikimedia.org/wikipedia/commons/d/db/MicroTAC.jpg
-			</p>			
-			<p class=bronVermelding>
-				IBM Simon by Bcos47<br>
-				https://upload.wikimedia.org/wikipedia/commons/9/9e/IBM_Simon_Personal_Communicator.png
-			</p>
-			<p class=bronVermelding>
-				Nokia 9110 by Oldmobil<br>
-				https://upload.wikimedia.org/wikipedia/commons/1/18/Nokia-9110-2.jpg
-			</p>
-			<p class=bronVermelding>
-				Nokia 3210 by Discostu<br>
-				https://upload.wikimedia.org/wikipedia/commons/e/e5/Nokia_3210_3.jpg
-			</p>	
-			<p class=bronVermelding>
-				Sharp J-SH04 by Morio<br>
-				https://upload.wikimedia.org/wikipedia/commons/3/38/Sharp_J-SH04_CP%2B_2011.jpgn
-			</p>
-			<p class=bronVermelding>
-				Nokia 6650 by Towel401<br>
-				https://upload.wikimedia.org/wikipedia/commons/f/ff/Nokia6650_unlocked.jpg
-			</p>
-			<p class=bronVermelding>
-				Motorola Razr by OptoScalpel<br>
-				https://upload.wikimedia.org/wikipedia/commons/7/71/Motorola_RAZR_V3i_03.JPG
-			</p>
-			<p class=bronVermelding>
-				Nexus One by Zach Vega<br>
-				https://upload.wikimedia.org/wikipedia/commons/2/22/Nexus_One.png
-			</p>
-			<p class=bronVermelding>
-				SMS by Claus Farber<br>
-				http://tinyurl.com/o7qgner
-			</p>
-			<p class=bronVermelding>
-				Simcards by Justin Ormont<br>
-				http://tinyurl.com/q44etrk
-			</p>
-			<p class=bronVermelding>
-				HTC Dream by Akela NDE<br>
-				http://tinyurl.com/qzytq32
+			<!-- PAGINA 2 - BELLER-->
+			<div class="section" id="section1">
+				<h1>U heeft een beller!</h1>
+				<!-- Trilgeluid -->
+				<audio id="buzzingsound" preload="auto">
+					<source src="sound.mp3">
+				</audio> 
+				
+				<!-- Verhaal -->
+				<audio id="verhaaltje" preload="auto">
+					<source src="verhaal.mp3">
+				</audio>
+				
+				<img id="iphone" src="images/nokia.png" alt="nokia">
+				
+				<a href="#1"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
+				<a href="#3"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>
+			</div>
+			
+			<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
+			<div class="section" id="section2">
+				<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
+				<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>	
+				
+				<div id='timeline-embed' style="width: 100%; height: 600px; "></div>
 
-			</p>
-			<p class=bronVermelding>
-				Nokia 101 by Omarcd<br>
-				http://tinyurl.com/nw7bd7c
-			</p>
-			<p class=bronVermelding>
-				Nokia 3310 by Discostu<br>
-				http://tinyurl.com/ohh8322
-			</p>
-			<p class=bronVermelding>
-				Bluetooth by Jnmasek<br>
-				http://tinyurl.com/pukyz56
-			</p>
+				<script type="text/javascript">
+					var options = {
+						height:10,
+						timenav_height_percentage: 25,
+						timenav_height_min: 80,
+						timenav_position: "top",
+						skinny_size: 20
+					}
+					timeline = new TL.Timeline('timeline-embed',
+					'https://docs.google.com/spreadsheets/d/1xDms3BhltQlMtiJRXYPOu5gi3hQpsCCmhd5yxh1cBRo/pubhtml', options);
+				</script>
+			</div>
 
-			<a href="#4"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
+			<!-- PAGINA 4 - SLIDES WERELD -->
+			<div class="section" id="section3">
+				<!-- Desktop versie -->
+				<div class="content">
+					<h1 id="chart_intro"></h1>
+					<div class="chart" id="abonnementen_chart" ></div>
+					<div class="chart" id="aansluitingen_chart"></div>
+					<div class="chart" id="regio_chart"></div>
+					<div data-ng-app="demo" data-ng-controller="TestController">
+						<div class="chart" id="world_chart">
+							<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
+						</div>
+					</div>	
+					<ul id="knoppen"></ul>
+				</div>
+				
+				<!-- Mobiele versie -->
+				<h1 id="form_titel">Interessante weetjes!</h1>
+				<form id="small_form" action="#" method="post">
+					<div id="keuze1">
+						<label id="opties_label" for="opties">Globale cijfers over mobiele telefonie</label>
+						<select id="opties" onchange="selection(this);">
+							<option value="" disabled selected>Maak uw keuze</option>
+							<option value="Globaal">Globaal</option>
+							<option value="Europa">Europa</option>
+							<option value="Azie">Azië</option>
+							<option value="N-Amerika">Noord Amerika</option>
+							<option value="Z-Amerika">Zuid Amerika</option>
+							<option value="Afrika">Afrika</option>
+							<option value="Oceanie">Oceanië</option>
+						</select>
+					</div>
+					<div id="keuze2" style="display:none;">
+						<div id="mob_globaal"> </div>
+					</div>
+					<div id="keuze3" style="display:none;">
+						<div id="mob_europa"> </div>
+					</div>
+					<div id="keuze4" style="display:none;">
+						<div id="mob_azie"> </div>				
+					</div>
+					<div id="keuze5" style="display:none;">
+						<div id="mob_n_amerika"> </div>
+					</div>
+					<div id="keuze6" style="display:none;">
+						<div id="mob_z_amerika"> </div>
+					</div>
+					<div id="keuze7" style="display:none;">
+						<div id="mob_afrika"> </div>
+					</div>
+					<div id="keuze8" style="display:none;">
+						<div id="mob_oceanie"> </div>
+					</div>
+				</form>
+
+				<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
+				<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>
+			</div>
+				
+			<!-- PAGINA 5 - BRONNENLIJST -->
+			<div class="section" id="section4">
+				<h1>Bronnenlijst</h1>
+				<p class=bronVermelding>
+					Angular Mappy by Matt Osborn<br>
+					<a href="https://github.com/mattosborn/angular-mappy">Link</a>
+				</p>
+				<p class=bronVermelding>
+					fullPage ny Alvaro Trigo<br>
+					<a href="https://github.com/alvarotrigo/fullPage.js">Link</a>
+				</p>
+				<p class=bronVermelding>
+					The Awesome Font by Dave Gandy<br>
+					<a href="https://fortawesome.github.io/Font-Awesome/">Link</a>
+				</p>
+				<p class=bronVermelding>
+					TimeLiner by Tarek Anandan<br>
+					<a href="http://www.technotarek.com/">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Animate by Daniel Eden<br>
+					<a href="http://daneden.me/animate">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Martin Cooper by Rico Shen<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/1/1f/2007Computex_e21Forum-MartinCooper.jpg">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nokia Talkman by Krystof.k<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Nokia_Talkman_%28right%29.jpg">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Motorola DynaTAC by Redrum0486<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/7/74/DynaTAC8000X.jpg">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Motorola MicroTAC by Redrum0486<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/d/db/MicroTAC.jpg">Link</a>
+				</p>			
+				<p class=bronVermelding>
+					IBM Simon by Bcos47<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/9/9e/IBM_Simon_Personal_Communicator.png">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nokia 9110 by Oldmobil<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/1/18/Nokia-9110-2.jpg">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nokia 3210 by Discostu<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Nokia_3210_3.jpg">Link</a>
+				</p>	
+				<p class=bronVermelding>
+					Sharp J-SH04 by Morio<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/3/38/Sharp_J-SH04_CP%2B_2011.jpgn">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nokia 6650 by Towel401<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/f/ff/Nokia6650_unlocked.jpg">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Motorola Razr by OptoScalpel<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/7/71/Motorola_RAZR_V3i_03.JPG">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nexus One by Zach Vega<br>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/2/22/Nexus_One.png">Link</a>
+				</p>
+				<p class=bronVermelding>
+					SMS by Claus Farber<br>
+					<a href="http://tinyurl.com/o7qgner">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Simcards by Justin Ormont<br>
+					<a href="http://tinyurl.com/q44etrk">Link</a>
+				</p>
+				<p class=bronVermelding>
+					HTC Dream by Akela NDE<br>
+					<a href="http://tinyurl.com/qzytq32">Link</a>
+
+				</p>
+				<p class=bronVermelding>
+					Nokia 101 by Omarcd<br>
+					<a href="http://tinyurl.com/nw7bd7c">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Nokia 3310 by Discostu<br>
+					<a href="http://tinyurl.com/ohh8322">Link</a>
+				</p>
+				<p class=bronVermelding>
+					Bluetooth by Jnmasek<br>
+					<a href="http://tinyurl.com/pukyz56">Link</a>
+				</p>
+
+				<a href="#4"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
+			</div>
 		</div>
-	</div>
-		<!-- FULLPAGE -->
+		<!-- EINDE FULLPAGE -->
 
+		<!-- iPhone tril functie -->
 		<script>
 			$('#iphone').addClass('animated wobble');
 		</script>
-		<!-- Einde animatie -->
 		
 		<script type="text/javascript">
 			window.onload=function(){
-			// collecting elements
-			var buzzingsound = document.getElementById('buzzingsound');
-			var verhaal = document.getElementById('verhaaltje');
-			var telefoon = document.getElementById('iphone');
-			var teller = 0;
-			
-			//playing welcome sound on mouse over
-			if(teller === 0){
-				telefoon.onmouseover = function(){
-					buzzingsound.play();
-				};
-			
-				telefoon.onclick=function(){
-					buzzingsound.pause();
-					$('#iphone').removeClass('animated wobble');
-				};
+				// collecting elements
+				var buzzingsound = document.getElementById('buzzingsound');
+				var verhaal = document.getElementById('verhaaltje');
+				var telefoon = document.getElementById('iphone');
+				var teller = 0;
 				
-				buzzingsound.onpause=function(){
-					verhaal.play();
-					teller = 1;
-				};
-			}
-		};
+				//playing welcome sound on mouse over
+				if(teller === 0){
+					telefoon.onmouseover = function(){
+						buzzingsound.play();
+					};
+				
+					telefoon.onclick=function(){
+						buzzingsound.pause();
+						$('#iphone').removeClass('animated wobble');
+					};
+					
+					buzzingsound.onpause=function(){
+						verhaal.play();
+						teller = 1;
+					};
+				}
+			};
 		</script> 
 	</body>
 </html>
