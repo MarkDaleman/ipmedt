@@ -136,7 +136,7 @@
 				<div class="chart" id="aansluitingen_chart"></div>
 				<div class="chart" id="regio_chart"></div>
 
-				<div ng-app="demo" ng-controller="TestController">
+				<div data-ng-app="demo" data-ng-controller="TestController">
 					<div class="chart" id="world_chart" >
 						<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
 					</div>
@@ -150,7 +150,7 @@
 				<div id="keuze1">
 					<label id="opties_label" for="opties">Maak een keuze: </label>
 					<select id="opties" onchange="selection(this);">
-						<option selected="true" style="display:none;">--SELECT--</option>
+						<option selected="selected" style="display:none;">--SELECT--</option>
 						<option value="Globaal">Globaal</option>
 						<option value="Europa">Europa</option>
 						<option value="Azie">Azië</option>
