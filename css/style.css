@@ -181,6 +181,10 @@ video#bgvid{
 	color: #000;
 }
 
+.tl-text-content-container {
+    width: 213px;
+}
+
 #menu a:link, a:visited{
     text-align: center;
     text-decoration: none;
@@ -355,12 +359,18 @@ table th, table td{
 /** RESPONSIVE **/
   /* Small Devices, Tablets */
 @media only screen and (max-width: 768px){	
+
+	.tl-slide .tl-slide-scrollable-container {
+		margin-top: -100px;
+		margin-left: -50px;
+	}
 	.bigasstitle{
 		font-size: 50px;
 	}
 	
 	#iphone{
-    	margin-left: 30%;
+    	    margin-left: 20%;
+    		max-height: 400px;
     }
 	
     .navLogo{
