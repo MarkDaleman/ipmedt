@@ -8,7 +8,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable{
 	width: 650px !important;
 }
-
+#openingsfilm{
+	cursor: pointer;
+}
 /** INTRO TABEL */
 
 span.underline{
@@ -401,6 +403,4 @@ table th, table td{
 	padding-left: 1%;
 	}
 }
-
-
 
