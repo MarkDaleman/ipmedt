@@ -26,9 +26,8 @@
 		<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type ="text/javascript" src="js/chart_main.js"></script>
-		<script type ="text/javascript" src="js/abonnementen.js"></script>
-		<script type ="text/javascript" src="js/verbindingen.js"></script>
-		<script type ="text/javascript" src="js/regio.js"></script>
+		<script type ="text/javascript" src="js/google_charts.js"></script>
+
 
 		<script type ="text/javascript" src="js/angular-mappy.js"></script>
 		<script type ="text/javascript" src="js/_mapdata.js"></script>
@@ -110,82 +109,83 @@
 			<a href="#3"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>
 		</div>
 		
-		<!-- PAGINA 3 - GESCHIEDENIS-->
-		<div class="section" id="section2">
-			<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
-			<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>	
-			
-			<div id='timeline-embed' style="width: 100%; height: 600px; "></div>
-		
-			<script type="text/javascript">
-				var options = {
-					timenav_height_percentage: 10,
-					is_embed: true
-				}
-				timeline = new TL.Timeline('timeline-embed',
-				'https://docs.google.com/spreadsheets/d/1xDms3BhltQlMtiJRXYPOu5gi3hQpsCCmhd5yxh1cBRo/pubhtml', options);
-			</script>
-		</div>
+<!-- PAGINA 3 - EERSTE PAGINA GESCHIEDENIS-->
+<div class="section" id="section2">
+	<a href="#2"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
+	<a href="#4"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>	
+	
+	<div id='timeline-embed' style="width: 100%; height: 600px; "></div>
+
+	<script type="text/javascript">
+		var options = {
+			height:10,
+			timenav_height_percentage: 25,
+			timenav_height_min: 80,
+			timenav_position: "top",
+			skinny_size: 20
+		}
+		timeline = new TL.Timeline('timeline-embed',
+		'https://docs.google.com/spreadsheets/d/1xDms3BhltQlMtiJRXYPOu5gi3hQpsCCmhd5yxh1cBRo/pubhtml', options);
+	</script>
+</div>
 
 
 		<!-- PAGINA 4 - SLIDES WERELD -->
-		<div class="section" id="section3">
-			<div class="content">
-				<h1 id="chart_intro"></h1>
-				<div class="chart" id="abonnementen_chart"></div>
-				<div class="chart" id="aansluitingen_chart"></div>
-				<div class="chart" id="regio_chart"></div>
-
-				<div data-ng-app="demo" data-ng-controller="TestController">
-					<div class="chart" id="world_chart" >
-						<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
-					</div>
-				</div>
-				
-				<ul id="knoppen"> </ul>
+<div class="section" id="section3">
+	<div class="content">
+		<h1 id="chart_intro"></h1>
+		<div class="chart" id="abonnementen_chart" ></div>
+		<div class="chart" id="aansluitingen_chart"></div>
+		<div class="chart" id="regio_chart"></div>
+		<div data-ng-app="demo" data-ng-controller="TestController">
+			<div class="chart" id="world_chart" >
+				<mappy data="data" map-data="mapPathData" key="metric" colors="heatmapColors" min="0" max="350" humanize-fn="mapDataHumanizeFn(val)"></mappy>
 			</div>
-			
-			<h1 id="form_titel">Geografische informatie!</h1>
-			<form id="small_form" action="#" method="post">
-				<div id="keuze1">
-					<label id="opties_label" for="opties">Maak een keuze: </label>
-					<select id="opties" onchange="selection(this);">
-						<option selected="selected" style="display:none;">--SELECT--</option>
-						<option value="Globaal">Globaal</option>
-						<option value="Europa">Europa</option>
-						<option value="Azie">Azië</option>
-						<option value="N-Amerika">Noord Amerika</option>
-						<option value="Z-Amerika">Zuid Amerika</option>
-						<option value="Afrika">Afrika</option>
-						<option value="Oceanie">Oceanië</option>
-					</select>
-				</div>
-				<div id="keuze2" style="display:none;">
-					<div id="mob_globaal"> </div>
-				</div>
-				<div id="keuze3" style="display:none;">
-					<div id="mob_europa"> </div>
-				</div>
-				<div id="keuze4" style="display:none;">
-					<div id="mob_azie"> </div>				
-				</div>
-				<div id="keuze5" style="display:none;">
-					<div id="mob_n_amerika"> </div>
-				</div>
-				<div id="keuze6" style="display:none;">
-					<div id="mob_z_amerika"> </div>
-				</div>
-				<div id="keuze7" style="display:none;">
-					<div id="mob_afrika"> </div>
-				</div>
-				<div id="keuze8" style="display:none;">
-					<div id="mob_oceanie"> </div>
-				</div>
-			</form>
-
-			<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven"></span></a>
-			<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden"></span></a>
+		</div>	
+		<ul id="knoppen"> </ul>
+	</div>
+	
+	<h1 id="form_titel">Interessante weetjes!</h1>
+	<form id="small_form" action="#" method="post">
+		<div id="keuze1">
+			<label id="opties_label" for="opties">Globale cijfers over mobiele telefonie</label>
+			<select id="opties" onchange="selection(this);">
+				<option value="" disabled selected>Maak uw keuze</option>
+				<option value="Globaal">Globaal</option>
+				<option value="Europa">Europa</option>
+				<option value="Azie">Azië</option>
+				<option value="N-Amerika">Noord Amerika</option>
+				<option value="Z-Amerika">Zuid Amerika</option>
+				<option value="Afrika">Afrika</option>
+				<option value="Oceanie">Oceanië</option>
+			</select>
 		</div>
+		<div id="keuze2" style="display:none;">
+			<div id="mob_globaal"> </div>
+		</div>
+		<div id="keuze3" style="display:none;">
+			<div id="mob_europa"> </div>
+		</div>
+		<div id="keuze4" style="display:none;">
+			<div id="mob_azie"> </div>				
+		</div>
+		<div id="keuze5" style="display:none;">
+			<div id="mob_n_amerika"> </div>
+		</div>
+		<div id="keuze6" style="display:none;">
+			<div id="mob_z_amerika"> </div>
+		</div>
+		<div id="keuze7" style="display:none;">
+			<div id="mob_afrika"> </div>
+		</div>
+		<div id="keuze8" style="display:none;">
+			<div id="mob_oceanie"> </div>
+		</div>
+	</form>
+
+	<a href="#3"><span class="fa fa-arrow-circle-o-up fa-3x knopBoven" /></a>
+	<a href="#5"><span class="fa fa-arrow-circle-o-down fa-3x knopBeneden" /></a>
+</div>
 			
 		<!-- PAGINA 5 - BRONNENLIJST -->
 		<div class="section" id="section4">

@@ -219,6 +219,25 @@ video#bgvid {
 	margin-right: 10px !important;
 }
 
+/* TIJDLIJN */
+.tl-timeline{
+	font-family: 'Cabin Condensed', sans-serif !important;	
+}
+.tl-media-content >img{
+	max-height: 350px !important;
+}
+.tl-caption{
+	text-align:center !important;
+}
+.tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title{
+	color: #FFFFFF !important;
+	opacity: 100 !important;
+}
+.tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
+    font-size: 12px !important;
+    opacity: 100 !important;
+}
+
 /* KNOPPEN BOVEN EN ONDER */
 .knopBoven, .knopBeneden{
 	position: absolute;
@@ -237,12 +256,16 @@ video#bgvid {
 /* GRAFIEKEN */
 
 .chart{
-	width: 65%;
-	height: 65%;
-	margin-top: 2%;
-	margin-right: 5%;
+	height: 100%;
+	width: 70%;
+	margin: 5% 3% 5% 0%;
 	float: right;
 }
+#world_chart{
+	width: 65% !important;
+	margin: 0% 7% 0% 0% !important;
+}
+
 #chart_intro{
 	width: 100%;
 	margin: 10px auto 2px auto;
@@ -250,8 +273,9 @@ video#bgvid {
 }
 #knoppen{
 	width: 20%;
-	height: 300px;
-	margin-left: 5%;
+	min-height: 250px;
+	height: 24%;
+	margin: auto 0% auto 5%;
 	float:left;
 	list-style-type: none;
 }
@@ -259,26 +283,18 @@ video#bgvid {
 #knoppen>a{
 	display: block;
 	font-family: 'Cabin Condensed', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.5vw;
+	text-align:center;
 	text-decoration:none;
 	margin-top: 7%;
 	color: rgba(52, 52, 52, 1);
 	background-color: rgba(52, 52, 52, 0.4);
 	height: 22%;
+	min-height: 50px;
 	padding: 5%;
 	border-radius: 15px;
 }
 
-<<<<<<< HEAD
-.bronVermelding{
-	border-radius: 15px;
-	float: left;
-	margin: 0 4% 1% 4%;
-	width: 40%;
-	background-color: rgba(52, 52, 52, 0.4);
-	padding-left: 1%;
-}
-=======
 /* TABEL */
 #keuze1{
 	width: 80%;
@@ -286,17 +302,19 @@ video#bgvid {
 	padding: auto;
 	font-family: 'Cabin Condensed', sans-serif;
 	font-size: 12pt;
+	text-align:center;
 }
 
 #opties_label{
-	width: 50%;
-	letter-spacing:10px;
+	width: 100%;
+	letter-spacing:2px;
 	font-size:15pt;
 	font-weight:bold;
 	margin-right:1%;
+	text-align:center;
 }
 #opties{
-	width: 30%;
+	width: 80%;
 	margin: auto;
 }
 
