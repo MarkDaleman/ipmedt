@@ -6,7 +6,6 @@ $(document).ready(function(){
     $("#fullpage").hide();
     $(".nav").hide();
 
-
     $(document).click(function(){
         $("#openingsfilm").hide();
         $("#fullpage").show();
