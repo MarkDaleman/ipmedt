@@ -192,7 +192,7 @@ video#bgvid {
 }
 
 /* Telefoon header in nav */
-#navLogo, .fa-color-white{
+.navLogo, .fa-color-white{
 	color: white;
 	height: 50px;
 	width: auto;
@@ -200,7 +200,7 @@ video#bgvid {
 	margin-bottom: 8px;
 }
 
-#navLogo{
+.navLogo{
 	margin-right: 20px;
 }
 
@@ -344,7 +344,7 @@ table th, table td
     	margin-left: 30%;
     }
 	
-    #navLogo {
+    .navLogo {
     max-height: 23px !important;
 	}
 
@@ -352,7 +352,7 @@ table th, table td
 		width: 100px !important;
 	}
 	
-	#navLogo, .fa-color-white{
+	.navLogo, .fa-color-white{
 		color: white;
 		height: 40px;
 		width: auto;
